@@ -1,0 +1,7 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP STM32F042C6T7
+F https://www.mouser.dk/datasheet/2/389/stmicroelectronics_sgst-s-a0002862944-1-1758214.pdf
+$ENDCMP
+#
+#End Doc Library

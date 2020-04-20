@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP BGSA12GN10E6327XTSA1
+D RF Switch ICs CMOS SWITCH
+K
+F https://www.infineon.com/dgdl/Infineon-BGSA12GN10-DS-v02_10-EN.pdf?fileId=5546d46255dd933d0155e9daddca09f6
+$ENDCMP
+#
+#End Doc Library

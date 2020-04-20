@@ -1,0 +1,17 @@
+.BGSA12GN10E6327XTSA1 :1 ;RF Switch ICs CMOS SWITCH
+BGSA12GN10E6327XTSA1
+*STM IC
+*NGS
+*PLB 1="NC_1" 2="RF1" 3="GND_1" 4="VDD" 5="NC_2" 6="CTRL" 7="GND_2" 8="RF2" 9="NC_3" 10="RFC"
+*MXP 10
+*DFN BGSA12GN10E6327XTSA1
+~!Manufacturer_Name (Infineon)
+~!Manufacturer_Part_Number (BGSA12GN10E6327XTSA1)
+~!Mouser Part Number (726-BGSA12GN10E6327X)
+~!Link Mouser Price/Stock (https://www.mouser.com/Search/Refine.aspx?Keyword=726-BGSA12GN10E6327X)
+~!RS Part Number (-)
+~!RS Price/Stock (-)
+~!Link Datasheet (https://www.infineon.com/dgdl/Infineon-BGSA12GN10-DS-v02_10-EN.pdf?fileId=5546d46255dd933d0155e9daddca09f6)
+~!Height (0mm)
+BGSA12GN10E6327XTSA1
+1.1!U 2.1!U 3.1!U 4.1!U 5.1!U 6.1!U 7.1!U 8.1!U 9.1!U 10.1!U 

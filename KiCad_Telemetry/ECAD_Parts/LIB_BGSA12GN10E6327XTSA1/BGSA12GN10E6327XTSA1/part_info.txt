@@ -1,0 +1,9 @@
+Manufacturer=Infineon
+PartNumber=BGSA12GN10E6327XTSA1
+PartCategory=Integrated Circuit
+PackageCategory=Other
+PinCount=10
+Version=1.2
+Released=2018-07-03 16:48:39
+Downloaded=2020-03-20 10:25:41
+3D=N

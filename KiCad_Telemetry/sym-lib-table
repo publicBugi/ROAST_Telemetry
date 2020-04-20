@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name stm32f042c6t7)(type Legacy)(uri ${KIPRJMOD}/ECAD_Parts/stm32f042c6t7.lib)(options "")(descr ""))
+)

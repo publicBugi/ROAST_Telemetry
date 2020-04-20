@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'BGSA12GN10E6327XTSA1'
+CLASS = IC
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "RS_PART_NUMBER", "RS_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "Infineon", "BGSA12GN10E6327XTSA1" (!) = "", "BGSA12GN10E6327XTSA1", "Other", "726-BGSA12GN10E6327X", "https://www.mouser.com/Search/Refine.aspx?Keyword=726-BGSA12GN10E6327X", "", "", "RF Switch ICs CMOS SWITCH", "https://www.infineon.com/dgdl/Infineon-BGSA12GN10-DS-v02_10-EN.pdf?fileId=5546d46255dd933d0155e9daddca09f6", "0 mm"
+END_PART
+
+END.
