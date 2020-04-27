@@ -1,5 +1,6 @@
 #MicroXplorer Configuration settings - do not modify
 Mcu.Family=STM32F0
+RCC.PLLSourceVirtual=RCC_PLLSOURCE_HSE
 ProjectManager.MainLocation=Src
 RCC.I2SFreq_Value=48000000
 RCC.MCOFreq_Value=48000000
@@ -97,7 +98,7 @@ CAN.IPParameters=CalculateTimeQuantum
 NVIC.PendSV_IRQn=true\:0\:0\:false\:false\:true\:false\:false
 PA13.Mode=Serial_Wire
 ProjectManager.FreePins=false
-RCC.IPParameters=AHBFreq_Value,APB1Freq_Value,APB1TimFreq_Value,CECFreq_Value,FCLKCortexFreq_Value,FamilyName,HCLKFreq_Value,HSICECFreq_Value,I2SFreq_Value,MCOFreq_Value,PLLCLKFreq_Value,PLLMCOFreq_Value,SYSCLKFreq_VALUE,SYSCLKSource,TimSysFreq_Value,USART1Freq_Value,USBFreq_Value,VCOOutput2Freq_Value
+RCC.IPParameters=AHBFreq_Value,APB1Freq_Value,APB1TimFreq_Value,CECFreq_Value,FCLKCortexFreq_Value,FamilyName,HCLKFreq_Value,HSICECFreq_Value,I2SFreq_Value,MCOFreq_Value,PLLCLKFreq_Value,PLLMCOFreq_Value,PLLSourceVirtual,SYSCLKFreq_VALUE,SYSCLKSource,TimSysFreq_Value,USART1Freq_Value,USBFreq_Value,VCOOutput2Freq_Value
 ProjectManager.AskForMigrate=true
 Mcu.Name=STM32F042C(4-6)Tx
 CAN.CalculateTimeQuantum=333.3333333333333
