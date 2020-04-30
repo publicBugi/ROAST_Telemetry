@@ -1,3 +1,5 @@
 (sym_lib_table
   (lib (name stm32f042c6t7)(type Legacy)(uri ${KIPRJMOD}/ECAD_Parts/stm32f042c6t7.lib)(options "")(descr ""))
+  (lib (name TCAN1044VDRQ1)(type Legacy)(uri ${KIPRJMOD}/ECAD_Parts/LIB_TCAN1044VDRQ1/TCAN1044VDRQ1/KiCad/TCAN1044VDRQ1.lib)(options "")(descr ""))
+  (lib (name B3F-4000)(type Legacy)(uri ${KIPRJMOD}/ECAD_Parts/LIB_B3F-4000/B3F-4000/KiCad/B3F-4000.lib)(options "")(descr ""))
 )

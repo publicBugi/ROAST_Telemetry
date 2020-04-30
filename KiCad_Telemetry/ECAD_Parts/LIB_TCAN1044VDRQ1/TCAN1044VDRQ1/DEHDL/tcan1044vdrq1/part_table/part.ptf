@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'TCAN1044VDRQ1'
+CLASS = IC
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "RS_PART_NUMBER", "RS_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "Texas Instruments", "TCAN1044VDRQ1" (!) = "", "SOIC127P600X175-8N", "Small Outline Packages", "595-TCAN1044VDRQ1", "https://www.mouser.com/Search/Refine.aspx?Keyword=595-TCAN1044VDRQ1", "", "", "CAN Interface IC Automotive high speed CAN transceiver 8-SOIC -40 to 125", "https://www.ti.com/lit/gpn/TCAN1044V-Q1", "1.75 mm"
+END_PART
+
+END.

@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'B3F_4000'
+CLASS = DISCRETE
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "DESCRIPTION", "DATASHEET";
+{========================================================================================}
+ "Omron Electronics", "B3F-4000" (!) = "", "B3F-4000", "Other", "653-B3F-4000", "https://www.mouser.co.uk/ProductDetail/Omron-Electronics/B3F-4000?qs=B3tblJ0Nlt8c5sbFRctxww%3D%3D", "lvory Plunger Tactile Switch, SPST-NO 0.05 A@ 24 V dc 0.8mm", "https://www.omron.com/ecb/products/pdf/en-b3f.pdf"
+END_PART
+
+END.

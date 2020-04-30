@@ -1,0 +1,73 @@
+(Japanese_coding: sjis)
+(function "ECS_479998"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2017-03-27-10:49:10)
+    (utime 2018-06-06-11:10:46)
+    (interface
+        (port "1" (symbPinId 1) (portType INOUT))
+        (port "2" (symbPinId 2) (portType INOUT))
+        (port "3" (symbPinId 3) (portType INOUT))
+        (port "4" (symbPinId 4) (portType INOUT))
+    )
+    (property "symbolName" "B3F-4000")
+)
+
+
+(pinAssign "ECS_479998"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2017-03-27-10:49:10)
+    (utime 2018-06-06-11:10:46)
+    (interface
+        (port "1" (symbPinId 1) (portName "1") (portType INOUT))
+        (port "2" (symbPinId 2) (portName "2") (portType INOUT))
+        (port "3" (symbPinId 3) (portName "3") (portType INOUT))
+        (port "4" (symbPinId 4) (portName "4") (portType INOUT))
+    )
+    (internal
+        (funcInst (functionRef "ECS_479998")
+                (port "1" (match "1"))
+                (port "2" (match "2"))
+                (port "3" (match "3"))
+                (port "4" (match "4"))
+        )
+    )
+    (property "usePowerBox" "No")
+    (property "symbolName" "B3F-4000")
+)
+
+
+(part "B3F-4000"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2017-03-27-10:49:10)
+    (utime 2018-06-06-11:10:46)
+    (packageRef "B3F-4000")
+    (pinAssignRef "ECS_479998")
+    (interface
+        (port "1" (symbPinId 1) (portName "1") (portType INOUT))
+        (port "2" (symbPinId 2) (portName "2") (portType INOUT))
+        (port "3" (symbPinId 3) (portName "3") (portType INOUT))
+        (port "4" (symbPinId 4) (portName "4") (portType INOUT))
+    )
+    (partClass UNDEF)
+    (useInSchema Y)
+    (useInLayout Y)
+    (inPartsList Y)
+    (partType NORMAL)
+    (placeRestriction FREE)
+    (property "enetNonSeries" "YES")
+    (property "refDesPrefix" "S")
+    (property "description" "lvory Plunger Tactile Switch, SPST-NO 0.05 A@ 24 V dc 0.8mm")
+    (property "Mouser_Part_Number" "653-B3F-4000")
+    (property "Mouser_Price/Stock" "https://www.mouser.co.uk/ProductDetail/Omron-Electronics/B3F-4000?qs=B3tblJ0Nlt8c5sbFRctxww%3D%3D")
+    (property "Manufacturer_Name" "Omron Electronics")
+    (property "Manufacturer_Part_Number" "B3F-4000")
+    (property "Datasheet_Link" "https://www.omron.com/ecb/products/pdf/en-b3f.pdf")
+)
+
+

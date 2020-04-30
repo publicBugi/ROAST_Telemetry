@@ -22,6 +22,7 @@ F 0 "U1" H 2079 1796 50  0000 L CNN
 F 1 "NRF24L01_Breakout" H 2079 1705 50  0000 L CNN
 F 2 "RF_Module:nRF24L01_Breakout" H 1850 2350 50  0001 L CIN
 F 3 "http://www.nordicsemi.com/eng/content/download/2730/34105/file/nRF24L01_Product_Specification_v2_0.pdf" H 1700 1650 50  0001 C CNN
+F 4 "NRF24 Breakout board connection: Board purchased seperately ~70 kr" H 1700 1750 50  0001 C CNN "Description"
 	1    1700 1750
 	-1   0    0    -1  
 $EndComp
@@ -33,6 +34,8 @@ F 0 "D1" V 7189 2183 50  0000 R CNN
 F 1 "LED" V 7098 2183 50  0000 R CNN
 F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7150 2300 50  0001 C CNN
 F 3 "~" H 7150 2300 50  0001 C CNN
+F 4 "720-KRDELPS122A5163 " V 7150 2300 50  0001 C CNN "MouserNO"
+F 5 "0,369 €" V 7150 2300 50  0001 C CNN "UnitPrice"
 	1    7150 2300
 	0    -1   -1   0   
 $EndComp
@@ -69,21 +72,12 @@ U 1 1 5E884632
 P 7900 1050
 F 0 "J3" V 7864 862 50  0000 R CNN
 F 1 "3.3 V Connectors" H 8050 1200 50  0000 R CNN
-F 2 "" H 7900 1050 50  0001 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal" H 7900 1050 50  0001 C CNN
 F 3 "~" H 7900 1050 50  0001 C CNN
+F 4 "651-1934861 " V 7900 1050 50  0001 C CNN "MouserNO"
+F 5 "0,387 €" V 7900 1050 50  0001 C CNN "UnitPrice"
 	1    7900 1050
 	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0103
-U 1 1 5E88767B
-P 7700 1150
-F 0 "#PWR0103" H 7700 900 50  0001 C CNN
-F 1 "GND" H 7705 977 50  0000 C CNN
-F 2 "" H 7700 1150 50  0001 C CNN
-F 3 "" H 7700 1150 50  0001 C CNN
-	1    7700 1150
-	0    1    1    0   
 $EndComp
 Wire Wire Line
 	10050 2000 10200 2000
@@ -123,6 +117,8 @@ F 2 "Connector_USB:USB_A_CNCTech_1001-011-01101_Horizontal" H 10650 1850 50  000
 F 3 "https://www.mouser.dk/datasheet/2/643/ds-stw-usb-2.0-and-3.0-connectors-1660615.pdf" H 10650 1850 50  0001 C CNN
 F 4 "530-SS-52100-001" H 10500 1900 50  0001 C CNN "MouserNO"
 F 5 "0,387" H 10500 1900 50  0001 C CNN "UnitPrice"
+F 6 "" H 10500 1900 50  0001 C CNN " Price"
+F 7 "USB Connection for 5V Supply and PC Communication" H 10500 1900 50  0001 C CNN "Description"
 	1    10500 1900
 	-1   0    0    -1  
 $EndComp
@@ -148,17 +144,6 @@ Wire Wire Line
 Wire Wire Line
 	1700 1150 1700 1000
 $Comp
-L Switch:SW_Push SW1
-U 1 1 5E8F110B
-P 950 3300
-F 0 "SW1" H 950 3585 50  0000 C CNN
-F 1 "Reset Button" H 950 3494 50  0000 C CNN
-F 2 "" H 950 3500 50  0001 C CNN
-F 3 "~" H 950 3500 50  0001 C CNN
-	1    950  3300
-	0    -1   -1   0   
-$EndComp
-$Comp
 L power:GND #PWR0106
 U 1 1 5E9128B5
 P 6450 5350
@@ -178,24 +163,15 @@ Determine footprint size of connectors, buttons and components
 $Comp
 L Connector:Screw_Terminal_01x02 J5
 U 1 1 5EA1A6D7
-P 10650 1100
-F 0 "J5" V 10614 912 50  0000 R CNN
-F 1 "5V Connectors" H 10800 1250 50  0000 R CNN
-F 2 "" H 10650 1100 50  0001 C CNN
-F 3 "~" H 10650 1100 50  0001 C CNN
-	1    10650 1100
+P 10600 1100
+F 0 "J5" V 10564 912 50  0000 R CNN
+F 1 "5V Connectors" H 10750 1250 50  0000 R CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal" H 10600 1100 50  0001 C CNN
+F 3 "~" H 10600 1100 50  0001 C CNN
+F 4 "651-1934861 " V 10600 1100 50  0001 C CNN "MouserNO"
+F 5 "0,387 €" V 10600 1100 50  0001 C CNN "UnitPrice"
+	1    10600 1100
 	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0118
-U 1 1 5EA1A6E2
-P 10450 1200
-F 0 "#PWR0118" H 10450 950 50  0001 C CNN
-F 1 "GND" H 10455 1027 50  0000 C CNN
-F 2 "" H 10450 1200 50  0001 C CNN
-F 3 "" H 10450 1200 50  0001 C CNN
-	1    10450 1200
-	0    1    1    0   
 $EndComp
 $Comp
 L Device:D D4
@@ -265,7 +241,7 @@ F 3 "" H 9000 2050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7150 1700 8000 1700
+	7150 1700 7700 1700
 Wire Wire Line
 	9000 1850 9000 1700
 Wire Wire Line
@@ -286,49 +262,32 @@ $EndComp
 $Comp
 L power:GND #PWR0123
 U 1 1 5EAC3FC8
-P 950 3500
-F 0 "#PWR0123" H 950 3250 50  0001 C CNN
-F 1 "GND" H 955 3327 50  0000 C CNN
-F 2 "" H 950 3500 50  0001 C CNN
-F 3 "" H 950 3500 50  0001 C CNN
-	1    950  3500
+P 750 3500
+F 0 "#PWR0123" H 750 3250 50  0001 C CNN
+F 1 "GND" H 755 3327 50  0000 C CNN
+F 2 "" H 750 3500 50  0001 C CNN
+F 3 "" H 750 3500 50  0001 C CNN
+	1    750  3500
 	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small 0.1uF1
-U 1 1 5EAC5304
-P 1300 3300
-F 0 "0.1uF1" V 1450 3300 50  0000 C CNN
-F 1 "C_Small" V 1550 3300 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 1300 3300 50  0001 C CNN
-F 3 "~" H 1300 3300 50  0001 C CNN
-	1    1300 3300
-	1    0    0    1   
 $EndComp
 $Comp
 L power:GND #PWR0124
 U 1 1 5EAC57E7
-P 1300 3500
-F 0 "#PWR0124" H 1300 3250 50  0001 C CNN
-F 1 "GND" H 1305 3327 50  0000 C CNN
-F 2 "" H 1300 3500 50  0001 C CNN
-F 3 "" H 1300 3500 50  0001 C CNN
-	1    1300 3500
+P 2600 3550
+F 0 "#PWR0124" H 2600 3300 50  0001 C CNN
+F 1 "GND" H 2605 3377 50  0000 C CNN
+F 2 "" H 2600 3550 50  0001 C CNN
+F 3 "" H 2600 3550 50  0001 C CNN
+	1    2600 3550
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1300 3500 1300 3400
-Text GLabel 1600 3050 2    50   Input ~ 0
+Text GLabel 2850 3050 2    50   Input ~ 0
 Reset
 Wire Wire Line
-	950  3100 950  3050
+	2200 3050 2600 3050
+Connection ~ 2600 3050
 Wire Wire Line
-	950  3050 1300 3050
-Wire Wire Line
-	1300 3200 1300 3050
-Connection ~ 1300 3050
-Wire Wire Line
-	1300 3050 1600 3050
+	2600 3050 2850 3050
 Text GLabel 6450 5650 0    50   Input ~ 0
 SW_DIO
 Text GLabel 6450 5550 0    50   Input ~ 0
@@ -361,7 +320,7 @@ F 3 "" H 6450 5750 50  0001 C CNN
 $EndComp
 Text GLabel 6450 5450 0    50   Input ~ 0
 Reset
-Text Notes 1350 2950 2    50   ~ 0
+Text Notes 2150 2950 2    50   ~ 0
 Chip Reset
 Text Notes 5900 4600 0    50   ~ 0
 SWD Programmer interface
@@ -378,11 +337,11 @@ Wire Notes Line
 Wire Notes Line
 	550  2800 550  3800
 Wire Notes Line
-	550  3800 1950 3800
+	550  3800 3200 3800
 Wire Notes Line
-	1950 3800 1950 2800
+	3200 3800 3200 2800
 Wire Notes Line
-	1950 2800 550  2800
+	3200 2800 550  2800
 $Comp
 L stm32f042c6t7:STM32F042C6T7 U2
 U 1 1 5E7FC864
@@ -393,6 +352,7 @@ F 2 "Package_QFP:LQFP-48-1EP_7x7mm_P0.5mm_EP3.6x3.6mm" H 2850 5750 50  0001 C CN
 F 3 "https://www.mouser.dk/datasheet/2/389/stmicroelectronics_sgst-s-a0002862944-1-1758214.pdf" H 2850 5750 50  0001 C CNN
 F 4 "511-STM32F042C6T7 " H 3400 5900 50  0001 C CNN "MouserNO"
 F 5 " 2,75" H 3400 5900 50  0001 C CNN "UnitPrice"
+F 6 "STM32 Processor; USB, CAN, UART, SPI Comms." H 3400 5900 50  0001 C CNN "Description"
 	1    3400 5900
 	1    0    0    -1  
 $EndComp
@@ -608,11 +568,11 @@ Connection ~ 4850 5050
 Wire Wire Line
 	4500 5050 4500 5350
 $Comp
-L Device:C_Small 100nF1
+L Device:C_Small C9
 U 1 1 5E8F9D18
 P 1150 5950
-F 0 "100nF1" V 1379 5950 50  0000 C CNN
-F 1 "C_Small" V 1288 5950 50  0000 C CNN
+F 0 "C9" V 1379 5950 50  0000 C CNN
+F 1 "100nF" V 1288 5950 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 1150 5950 50  0001 C CNN
 F 3 "~" H 1150 5950 50  0001 C CNN
 	1    1150 5950
@@ -862,7 +822,7 @@ $EndComp
 Wire Wire Line
 	10200 1700 10000 1700
 Wire Wire Line
-	10000 1100 10450 1100
+	10000 1100 10400 1100
 $Comp
 L power:+3.3V #PWR01
 U 1 1 5EE9A2A8
@@ -902,7 +862,6 @@ NoConn ~ 2450 5650
 NoConn ~ 2450 5550
 NoConn ~ 2450 5450
 NoConn ~ 2200 2050
-NoConn ~ 3350 4950
 NoConn ~ 3450 4950
 NoConn ~ 3550 4950
 NoConn ~ 3650 4950
@@ -920,6 +879,8 @@ F 0 "D2" V 8589 4683 50  0000 R CNN
 F 1 "LED" V 8498 4683 50  0000 R CNN
 F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 8550 4800 50  0001 C CNN
 F 3 "~" H 8550 4800 50  0001 C CNN
+F 4 "720-KRDELPS122A5163 " V 8550 4800 50  0001 C CNN "MouserNO"
+F 5 "0,369 €" V 8550 4800 50  0001 C CNN "UnitPrice"
 	1    8550 4800
 	0    -1   -1   0   
 $EndComp
@@ -939,7 +900,7 @@ L Device:R R1
 U 1 1 5E83D5BF
 P 8550 4450
 F 0 "R1" H 8620 4496 50  0000 L CNN
-F 1 "65" H 8620 4405 50  0000 L CNN
+F 1 "55" H 8620 4405 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 8480 4450 50  0001 C CNN
 F 3 "~" H 8550 4450 50  0001 C CNN
 	1    8550 4450
@@ -962,14 +923,14 @@ L Device:R R2
 U 1 1 5E8150F7
 P 7150 1950
 F 0 "R2" H 7220 1996 50  0000 L CNN
-F 1 "R" H 7220 1905 50  0000 L CNN
+F 1 "55" H 7220 1905 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 7080 1950 50  0001 C CNN
 F 3 "~" H 7150 1950 50  0001 C CNN
 	1    7150 1950
 	1    0    0    -1  
 $EndComp
 Text Notes 9050 3550 0    50   ~ 0
-All LED's assume Vf = 2 V , If = 20 mA
+All LED's assume Vf = 2.2 V , If = 20 mA
 Wire Wire Line
 	7200 1050 7000 1050
 Text Notes 5550 4000 0    50   ~ 0
@@ -977,34 +938,25 @@ Debugging Pins and Additional IO pins
 $Comp
 L power:+3.3V #PWR0102
 U 1 1 5E8EC105
-P 9600 5600
-F 0 "#PWR0102" H 9600 5450 50  0001 C CNN
-F 1 "+3.3V" H 9615 5773 50  0000 C CNN
-F 2 "" H 9600 5600 50  0001 C CNN
-F 3 "" H 9600 5600 50  0001 C CNN
-	1    9600 5600
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0127
-U 1 1 5E8EB934
-P 9600 6300
-F 0 "#PWR0127" H 9600 6050 50  0001 C CNN
-F 1 "GND" H 9605 6127 50  0000 C CNN
-F 2 "" H 9600 6300 50  0001 C CNN
-F 3 "" H 9600 6300 50  0001 C CNN
-	1    9600 6300
-	1    0    0    -1  
+P 8250 6100
+F 0 "#PWR0102" H 8250 5950 50  0001 C CNN
+F 1 "+3.3V" H 8265 6273 50  0000 C CNN
+F 2 "" H 8250 6100 50  0001 C CNN
+F 3 "" H 8250 6100 50  0001 C CNN
+	1    8250 6100
+	0    -1   -1   0   
 $EndComp
 $Comp
 L Connector:Screw_Terminal_01x02 J4
 U 1 1 5E8EACAB
-P 10850 5900
-F 0 "J4" H 10550 6150 50  0000 L CNN
-F 1 "Screw_Terminal_01x02" H 10200 6050 50  0000 L CNN
-F 2 "" H 10850 5900 50  0001 C CNN
-F 3 "~" H 10850 5900 50  0001 C CNN
-	1    10850 5900
+P 10500 6000
+F 0 "J4" H 10450 6400 50  0000 L CNN
+F 1 "Screw_Terminal_01x02" H 9800 6300 50  0000 L CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal" H 10500 6000 50  0001 C CNN
+F 3 "~" H 10500 6000 50  0001 C CNN
+F 4 "651-1934861 " H 10500 6000 50  0001 C CNN "MouserNO"
+F 5 "0,387 €" H 10500 6000 50  0001 C CNN "UnitPrice"
+	1    10500 6000
 	1    0    0    -1  
 $EndComp
 Wire Notes Line
@@ -1021,82 +973,23 @@ Wire Notes Line
 	11150 6500 11150 5400
 Text Notes 7050 6900 0    50   ~ 0
 Features:\n- Long distance communication between CANBus and Supporting Vehicle\n- TPMS Receiver\n- USB Interface
-Text Notes 10400 5500 2    50   ~ 0
+Text Notes 9900 5550 2    50   ~ 0
 CAN Interface
-Wire Wire Line
-	10000 6000 10650 6000
-Wire Wire Line
-	10000 5900 10650 5900
-Text GLabel 9200 5900 0    50   Input ~ 0
+Text GLabel 8800 6200 0    50   Input ~ 0
 CAN_RX
-Text GLabel 9200 5800 0    50   Input ~ 0
+Text GLabel 8800 5900 0    50   Input ~ 0
 CAN_TX
-$Comp
-L Device:R R3
-U 1 1 5E933F13
-P 8450 5800
-F 0 "R3" H 8520 5846 50  0000 L CNN
-F 1 "R" H 8520 5755 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 8380 5800 50  0001 C CNN
-F 3 "~" H 8450 5800 50  0001 C CNN
-	1    8450 5800
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R4
-U 1 1 5E93501C
-P 8450 6200
-F 0 "R4" H 8520 6246 50  0000 L CNN
-F 1 "R" H 8520 6155 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 8380 6200 50  0001 C CNN
-F 3 "~" H 8450 6200 50  0001 C CNN
-	1    8450 6200
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0128
-U 1 1 5E93C6F0
-P 8450 6350
-F 0 "#PWR0128" H 8450 6100 50  0001 C CNN
-F 1 "GND" H 8455 6177 50  0000 C CNN
-F 2 "" H 8450 6350 50  0001 C CNN
-F 3 "" H 8450 6350 50  0001 C CNN
-	1    8450 6350
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3.3V #PWR0129
-U 1 1 5E93CA8C
-P 8450 5650
-F 0 "#PWR0129" H 8450 5500 50  0001 C CNN
-F 1 "+3.3V" H 8465 5823 50  0000 C CNN
-F 2 "" H 8450 5650 50  0001 C CNN
-F 3 "" H 8450 5650 50  0001 C CNN
-	1    8450 5650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9200 6000 8450 6000
-Wire Wire Line
-	8450 6000 8450 5950
-Wire Wire Line
-	8450 6050 8450 6000
-Connection ~ 8450 6000
 $Comp
 L power:GND #PWR0130
 U 1 1 5E9499EC
-P 9200 6200
-F 0 "#PWR0130" H 9200 5950 50  0001 C CNN
-F 1 "GND" H 9205 6027 50  0000 C CNN
-F 2 "" H 9200 6200 50  0001 C CNN
-F 3 "" H 9200 6200 50  0001 C CNN
-	1    9200 6200
-	1    0    0    -1  
+P 8350 6000
+F 0 "#PWR0130" H 8350 5750 50  0001 C CNN
+F 1 "GND" H 8355 5827 50  0000 C CNN
+F 2 "" H 8350 6000 50  0001 C CNN
+F 3 "" H 8350 6000 50  0001 C CNN
+	1    8350 6000
+	0    1    1    0   
 $EndComp
-Wire Wire Line
-	9200 6200 9200 6100
-Text Notes 9200 6050 0    50   ~ 0
-IS CAN 5V or 3.3 V?
 $Comp
 L Connector_Generic:Conn_01x05 J2
 U 1 1 5EAC6A0B
@@ -1130,6 +1023,7 @@ F 2 "Package_TO_SOT_SMD:SOT-23-5" H 8450 2125 50  0001 C CIN
 F 3 "http://www.ti.com/lit/ds/symlink/tlv700.pdf" H 8450 1850 50  0001 C CNN
 F 4 "595-TLV70333DBVR" H 8450 1800 50  0001 C CNN "MouserNO"
 F 5 "0,315" H 8450 1800 50  0001 C CNN "UnitPrice"
+F 6 "5V to 3.3V Linear regulator" H 8450 1800 50  0001 C CNN "Description"
 	1    8450 1800
 	-1   0    0    -1  
 $EndComp
@@ -1169,8 +1063,6 @@ F 3 "" H 9300 2050 50  0001 C CNN
 	1    9300 2050
 	1    0    0    -1  
 $EndComp
-Text Notes 9250 5950 0    50   ~ 0
-Determine CAN IC
 Text GLabel 5200 2100 0    50   Input ~ 0
 SPI2_SCK
 Text GLabel 5200 2200 0    50   Input ~ 0
@@ -1182,23 +1074,23 @@ SPI2_NSS
 $Comp
 L power:+3.3V #PWR0132
 U 1 1 5EA85B3A
-P 5150 1750
-F 0 "#PWR0132" H 5150 1600 50  0001 C CNN
-F 1 "+3.3V" H 5165 1923 50  0000 C CNN
-F 2 "" H 5150 1750 50  0001 C CNN
-F 3 "" H 5150 1750 50  0001 C CNN
-	1    5150 1750
+P 5150 1800
+F 0 "#PWR0132" H 5150 1650 50  0001 C CNN
+F 1 "+3.3V" H 5165 1973 50  0000 C CNN
+F 2 "" H 5150 1800 50  0001 C CNN
+F 3 "" H 5150 1800 50  0001 C CNN
+	1    5150 1800
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0133
 U 1 1 5EA869A9
-P 5150 2450
-F 0 "#PWR0133" H 5150 2200 50  0001 C CNN
-F 1 "GND" H 5155 2277 50  0000 C CNN
-F 2 "" H 5150 2450 50  0001 C CNN
-F 3 "" H 5150 2450 50  0001 C CNN
-	1    5150 2450
+P 5150 2400
+F 0 "#PWR0133" H 5150 2150 50  0001 C CNN
+F 1 "GND" H 5155 2227 50  0000 C CNN
+F 2 "" H 5150 2400 50  0001 C CNN
+F 3 "" H 5150 2400 50  0001 C CNN
+	1    5150 2400
 	1    0    0    -1  
 $EndComp
 Text GLabel 5200 1900 0    50   Input ~ 0
@@ -1209,19 +1101,15 @@ U 1 1 5EA94761
 P 5600 2100
 F 0 "J6" V 5564 1712 50  0000 R CNN
 F 1 "Conn_01x07" V 5473 1712 50  0000 R CNN
-F 2 "" H 5600 2100 50  0001 C CNN
+F 2 "Connector_PinSocket_1.00mm:PinSocket_1x07_P1.00mm_Vertical" H 5600 2100 50  0001 C CNN
 F 3 "~" H 5600 2100 50  0001 C CNN
 	1    5600 2100
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5150 1750 5400 1750
+	5150 1800 5400 1800
 Wire Wire Line
-	5400 1750 5400 1800
-Wire Wire Line
-	5150 2450 5400 2450
-Wire Wire Line
-	5400 2450 5400 2400
+	5150 2400 5400 2400
 Wire Wire Line
 	5200 2300 5400 2300
 Wire Wire Line
@@ -1234,17 +1122,139 @@ Wire Wire Line
 	5200 1900 5400 1900
 Text Notes 3850 1250 0    50   ~ 0
 Unable to design solution until Mechanical choose Tires\n\nCurrent solution: SPI Connection for external board, similar to the NRF24
-Text Notes 11900 50   0    50   ~ 0
+Text Notes 9000 750  0    50   ~ 0
 Possibly peak 48 Volt input voltage rail in car
 $Comp
-L Regulator_Linear:TPS7A7001DDA U4
-U 1 1 5EC32E3E
-P 12750 450
-F 0 "U4" H 12750 817 50  0000 C CNN
-F 1 "TPS7A7001DDA" H 12750 726 50  0000 C CNN
-F 2 "Package_SO:TI_SO-PowerPAD-8" H 12700 800 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tps7a7001.pdf" H 12750 450 50  0001 C CNN
-	1    12750 450 
+L TCAN1044VDRQ1:TCAN1044VDRQ1 IC1
+U 1 1 5EB090DB
+P 8800 5900
+F 0 "IC1" H 9400 6165 50  0000 C CNN
+F 1 "TCAN1044VDRQ1" H 9400 6074 50  0000 C CNN
+F 2 "SOIC127P600X175-8N" H 9850 6000 50  0001 L CNN
+F 3 "https://www.ti.com/lit/gpn/TCAN1044V-Q1" H 9850 5900 50  0001 L CNN
+F 4 "CAN Interface IC Automotive high speed CAN transceiver 8-SOIC -40 to 125" H 9850 5800 50  0001 L CNN "Description"
+F 5 "1.75" H 9850 5700 50  0001 L CNN "Height"
+F 6 "Texas Instruments" H 9850 5600 50  0001 L CNN "Manufacturer_Name"
+F 7 "TCAN1044VDRQ1" H 9850 5500 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "595-TCAN1044VDRQ1" H 9850 5400 50  0001 L CNN "MouserNO"
+F 9 "https://www.mouser.com/Search/Refine.aspx?Keyword=595-TCAN1044VDRQ1" H 9850 5300 50  0001 L CNN "UnitPrice"
+F 10 "" H 9850 5200 50  0001 L CNN "RS Part Number"
+F 11 "" H 9850 5100 50  0001 L CNN "RS Price/Stock"
+	1    8800 5900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8800 6000 8350 6000
+Wire Wire Line
+	8800 6100 8250 6100
+Wire Wire Line
+	10000 6000 10300 6000
+Wire Wire Line
+	10300 6100 10000 6100
+NoConn ~ 10000 6200
+Text GLabel 3350 4800 1    50   Input ~ 0
+CAN_STB
+Wire Wire Line
+	3350 4950 3350 4800
+Text GLabel 10000 5900 2    50   Input ~ 0
+CAN_STB
+$Comp
+L B3F-4000:B3F-4000 S1
+U 1 1 5EB17941
+P 1050 3250
+F 0 "S1" H 1450 3515 50  0000 C CNN
+F 1 "B3F-4000" H 1450 3424 50  0000 C CNN
+F 2 "B3F-4000" H 1700 3350 50  0001 L CNN
+F 3 "https://www.omron.com/ecb/products/pdf/en-b3f.pdf" H 1700 3250 50  0001 L CNN
+F 4 "lvory Plunger Tactile Switch, SPST-NO 0.05 A@ 24 V dc 0.8mm" H 1700 3150 50  0001 L CNN "Description"
+F 5 "" H 1700 3050 50  0001 L CNN "Height"
+F 6 "653-B3F-4000" H 1700 2950 50  0001 L CNN "MouserNO"
+F 7 "Free" H 1700 2850 50  0001 L CNN "UnitPrice"
+F 8 "Omron Electronics" H 1700 2750 50  0001 L CNN "Manufacturer_Name"
+F 9 "B3F-4000" H 1700 2650 50  0001 L CNN "Manufacturer_Part_Number"
+	1    1050 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 3200 2600 3050
+Wire Wire Line
+	2600 3550 2600 3400
+$Comp
+L Device:C_Small C11
+U 1 1 5EAC5304
+P 2600 3300
+F 0 "C11" V 2750 3300 50  0000 C CNN
+F 1 "0.1 uF" V 2850 3300 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2600 3300 50  0001 C CNN
+F 3 "~" H 2600 3300 50  0001 C CNN
+	1    2600 3300
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	1850 3250 1850 3300
+Wire Wire Line
+	1050 3350 1050 3300
+Wire Wire Line
+	1050 3300 750  3300
+Wire Wire Line
+	750  3300 750  3500
+Connection ~ 1050 3300
+Wire Wire Line
+	1050 3300 1050 3250
+Wire Wire Line
+	1850 3300 2200 3300
+Connection ~ 1850 3300
+Wire Wire Line
+	1850 3300 1850 3350
+Wire Wire Line
+	2200 3050 2200 3300
+$Comp
+L Device:C_Small C10
+U 1 1 5EBDA57F
+P 7700 1950
+F 0 "C10" H 7792 1996 50  0000 L CNN
+F 1 "Opt. Decoupling Cap" H 7550 1550 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7700 1950 50  0001 C CNN
+F 3 "~" H 7700 1950 50  0001 C CNN
+	1    7700 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7700 1700 7700 1850
+Connection ~ 7700 1700
+Wire Wire Line
+	7700 1700 8000 1700
+$Comp
+L power:GND #PWR0127
+U 1 1 5EBE07AA
+P 7700 2050
+F 0 "#PWR0127" H 7700 1800 50  0001 C CNN
+F 1 "GND" H 7705 1877 50  0000 C CNN
+F 2 "" H 7700 2050 50  0001 C CNN
+F 3 "" H 7700 2050 50  0001 C CNN
+	1    7700 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 5E88767B
+P 7700 1150
+F 0 "#PWR0103" H 7700 900 50  0001 C CNN
+F 1 "GND" H 7705 977 50  0000 C CNN
+F 2 "" H 7700 1150 50  0001 C CNN
+F 3 "" H 7700 1150 50  0001 C CNN
+	1    7700 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0118
+U 1 1 5EA1A6E2
+P 10400 1200
+F 0 "#PWR0118" H 10400 950 50  0001 C CNN
+F 1 "GND" H 10405 1027 50  0000 C CNN
+F 2 "" H 10400 1200 50  0001 C CNN
+F 3 "" H 10400 1200 50  0001 C CNN
+	1    10400 1200
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC

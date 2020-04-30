@@ -1,0 +1,16 @@
+.B3F-4000 :1 ;lvory Plunger Tactile Switch, SPST-NO 0.05 A@ 24 V dc 0.8mm
+B3F-4000
+*STM S
+*NGS
+*PLB 1="1" 2="2" 3="3" 4="4"
+*MXP 6
+*DFN B3F-4000
+~!Mouser Part Number (653-B3F-4000)
+~!Link Mouser Price/Stock (https://www.mouser.co.uk/ProductDetail/Omron-Electronics/B3F-4000?qs=B3tblJ0Nlt8c5sbFRctxww%3D%3D)
+~!Manufacturer_Name (Omron Electronics)
+~!Manufacturer_Part_Number (B3F-4000)
+~!Link Datasheet (https://www.omron.com/ecb/products/pdf/en-b3f.pdf)
+~!Height (-)
+~!3D_Model (B3F-4000)
+B3F-4000
+1.1!U 2.1!U 3.1!U 4.1!U 

@@ -1,0 +1,74 @@
+PCBNEW-LibModule-V1  2020-04-29 21:38:00
+# encoding utf-8
+Units mm
+$INDEX
+B3F-4000
+$EndINDEX
+$MODULE B3F-4000
+Po 0 0 0 15 5ea9e5a8 00000000 ~~
+Li B3F-4000
+Cd B3F-4000
+Kw Switch
+Sc 0
+At STD
+AR 
+Op 0 0 0
+T0 -0.33 -0.055 1.27 1.27 0 0.254 N V 21 N "S**"
+T1 -0.33 -0.055 1.27 1.27 0 0.254 N I 21 N "B3F-4000"
+DS -6 -6 6 -6 0.2 24
+DS 6 -6 6 6 0.2 24
+DS 6 6 -6 6 0.2 24
+DS -6 6 -6 -6 0.2 24
+DS -6 -6 6 -6 0.2 21
+DS 6 6 -6 6 0.2 21
+DS -6 6 -6 3.4 0.2 21
+DS -6 -6 -6 -3.4 0.2 21
+DS -6 -1.025 -6 1.025 0.2 21
+DS 6 -6 6 -3.4 0.2 21
+DS 6 -1.025 6 1.025 0.2 21
+DS 6 6 6 3.4 0.2 21
+DC 7.861 2.34 7.75812 2.34 0.254 21
+$PAD
+Po 6.25 2.25
+Sh "1" C 1.85 1.85 0 0 900
+Dr 1.25 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+$EndPAD
+$PAD
+Po -6.25 2.25
+Sh "2" C 1.85 1.85 0 0 900
+Dr 1.25 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+$EndPAD
+$PAD
+Po 6.25 -2.25
+Sh "3" C 1.85 1.85 0 0 900
+Dr 1.25 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+$EndPAD
+$PAD
+Po -6.25 -2.25
+Sh "4" C 1.85 1.85 0 0 900
+Dr 1.25 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+$EndPAD
+$PAD
+Po 0 -4.5
+Sh "5" C 1.8 1.8 0 0 900
+Dr 1.8 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+$EndPAD
+$PAD
+Po 0 4.5
+Sh "6" C 1.8 1.8 0 0 900
+Dr 1.8 0 0
+At STD N 00E0FFFF
+Ne 0 ""
+$EndPAD
+$EndMODULE B3F-4000
+$EndLIBRARY
