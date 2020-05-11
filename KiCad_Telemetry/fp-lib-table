@@ -2,4 +2,7 @@
   (lib (name TCAN1044VDRQ1)(type Legacy)(uri ${KIPRJMOD}/ECAD_Parts/LIB_TCAN1044VDRQ1/TCAN1044VDRQ1/KiCad/TCAN1044VDRQ1.mod)(options "")(descr ""))
   (lib (name BGSA12GN10E6327XTSA1)(type Legacy)(uri ${KIPRJMOD}/ECAD_Parts/LIB_BGSA12GN10E6327XTSA1/BGSA12GN10E6327XTSA1/KiCad/BGSA12GN10E6327XTSA1.mod)(options "")(descr ""))
   (lib (name B3F-4000)(type Legacy)(uri ${KIPRJMOD}/ECAD_Parts/LIB_B3F-4000/B3F-4000/KiCad/B3F-4000.mod)(options "")(descr ""))
+  (lib (name mysensors_radios)(type KiCad)(uri ${KIPRJMOD}/ECAD_Parts/mysensors_radios.pretty-master)(options "")(descr ""))
+  (lib (name NRF24L01)(type Legacy)(uri ${KIPRJMOD}/ECAD_Parts/mysensors_radios.pretty-master/NRF24L01.mod)(options "")(descr ""))
+  (lib (name KiCad_Local_Files)(type KiCad)(uri /home/bugi/KiCad_Local_Files)(options "")(descr ""))
 )
