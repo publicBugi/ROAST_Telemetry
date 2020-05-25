@@ -95,9 +95,9 @@ Wire Notes Line
 Text Notes 5100 7650 0    50   ~ 0
 External Clock
 Text GLabel 2600 6900 2    50   Input ~ 0
-USB_DP
+USB_D+
 Text GLabel 2600 6800 2    50   Input ~ 0
-USB_DM
+USB_D-
 Text GLabel 1200 7100 0    50   Input ~ 0
 SPI2_SCK
 Text GLabel 1200 7000 0    50   Input ~ 0
@@ -188,47 +188,36 @@ F 6 "Reset Cap to combat parasitic resets (According to Datasheet)" V 2050 3600 
 	1    0    0    1   
 $EndComp
 $Comp
-L Mechanical:MountingHole H1
+L Mechanical:MountingHole_Pad H1
 U 1 1 5EACA05D
 P 3400 700
 F 0 "H1" H 3500 746 50  0000 L CNN
 F 1 "MountingHole" H 3500 655 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.5mm" H 3400 700 50  0001 C CNN
+F 2 "MountingHole:MountingHole_3.5mm_Pad_Via" H 3400 700 50  0001 C CNN
 F 3 "~" H 3400 700 50  0001 C CNN
 	1    3400 700 
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole H2
+L Mechanical:MountingHole_Pad H2
 U 1 1 5EACC8D0
-P 3400 900
-F 0 "H2" H 3500 946 50  0000 L CNN
-F 1 "MountingHole" H 3500 855 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.5mm" H 3400 900 50  0001 C CNN
-F 3 "~" H 3400 900 50  0001 C CNN
-	1    3400 900 
+P 4100 700
+F 0 "H2" H 4200 746 50  0000 L CNN
+F 1 "MountingHole" H 4200 655 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.5mm_Pad_Via" H 4100 700 50  0001 C CNN
+F 3 "~" H 4100 700 50  0001 C CNN
+	1    4100 700 
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole H3
-U 1 1 5EACCCEE
-P 3400 1100
-F 0 "H3" H 3500 1146 50  0000 L CNN
-F 1 "MountingHole" H 3500 1055 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.5mm" H 3400 1100 50  0001 C CNN
-F 3 "~" H 3400 1100 50  0001 C CNN
-	1    3400 1100
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole H4
+L Mechanical:MountingHole_Pad H4
 U 1 1 5EACCF43
-P 3400 1300
-F 0 "H4" H 3500 1346 50  0000 L CNN
-F 1 "MountingHole" H 3500 1255 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.5mm" H 3400 1300 50  0001 C CNN
-F 3 "~" H 3400 1300 50  0001 C CNN
-	1    3400 1300
+P 3400 1200
+F 0 "H4" H 3500 1246 50  0000 L CNN
+F 1 "MountingHole" H 3500 1155 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.5mm_Pad_Via" H 3400 1200 50  0001 C CNN
+F 3 "~" H 3400 1200 50  0001 C CNN
+	1    3400 1200
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -325,60 +314,14 @@ Wire Wire Line
 	1850 3450 2050 3450
 Wire Wire Line
 	1700 1100 1700 1150
-$Comp
-L Connector_Generic:Conn_01x02 J5
-U 1 1 5EBC0206
-P 9050 6350
-F 0 "J5" H 9130 6342 50  0000 L CNN
-F 1 "PinHeader_01x02" H 8700 6100 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 9050 6350 50  0001 C CNN
-F 3 "https://www.mouser.dk/datasheet/2/181/M20-973-1273432.pdf" H 9050 6350 50  0001 C CNN
-F 4 "855-M20-9730245 " H 9050 6350 50  0001 C CNN "MouserNO"
-F 5 "0,144" H 9050 6350 50  0001 C CNN "UnitPrice"
-F 6 "Supply Pinheaders for debugging" H 9050 6350 50  0001 C CNN "Description"
-	1    9050 6350
-	1    0    0    1   
-$EndComp
-Text GLabel 8850 6350 0    50   Input ~ 0
-CAN-
-Text GLabel 8850 6250 0    50   Input ~ 0
-CAN+
 Text GLabel 10050 6050 0    50   Input ~ 0
 CAN+
-Text GLabel 10050 5950 0    50   Input ~ 0
-CAN-
-$Comp
-L power:GND #PWR030
-U 1 1 5EC183F7
-P 9700 5850
-F 0 "#PWR030" H 9700 5600 50  0001 C CNN
-F 1 "GND" H 9705 5677 50  0000 C CNN
-F 2 "" H 9700 5850 50  0001 C CNN
-F 3 "" H 9700 5850 50  0001 C CNN
-	1    9700 5850
-	-1   0    0    -1  
-$EndComp
 Wire Wire Line
 	10050 6050 10200 6050
 Wire Wire Line
 	10050 5950 10200 5950
 Wire Wire Line
-	9700 5850 9950 5850
-Wire Wire Line
 	10200 5550 9950 5550
-Wire Wire Line
-	9700 5550 9700 5500
-$Comp
-L power:VCC #PWR029
-U 1 1 5ECA4ED3
-P 9700 5500
-F 0 "#PWR029" H 9700 5350 50  0001 C CNN
-F 1 "VCC" H 9717 5673 50  0000 C CNN
-F 2 "" H 9700 5500 50  0001 C CNN
-F 3 "" H 9700 5500 50  0001 C CNN
-	1    9700 5500
-	1    0    0    -1  
-$EndComp
 $Comp
 L B3F-4000:B3F-4000 S1
 U 1 1 5EB17941
@@ -977,8 +920,6 @@ F 3 "~" H 9950 5550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 9950 5550
-Wire Wire Line
-	9950 5550 9700 5550
 $Comp
 L power:PWR_FLAG #FLG0102
 U 1 1 5EED990B
@@ -1225,8 +1166,6 @@ Text Notes 5200 5250 0    50   ~ 0
 According to Datasheet of STM32F042x
 Text Notes 2300 3900 0    50   ~ 0
 According to Datasheet
-Text Notes 7350 7500 0    50   ~ 0
-DTU ROAST Telemetry Module
 $Comp
 L power:VCC #PWR033
 U 1 1 5ECAAFFF
@@ -1257,43 +1196,23 @@ Wire Wire Line
 Wire Wire Line
 	10450 4250 10200 4250
 $Comp
-L Connector:USB_A J8
+L Connector:USB_B_Micro J8
 U 1 1 5E7F3D0D
 P 10750 4450
 F 0 "J8" H 10807 4917 50  0000 C CNN
-F 1 "USB_A Connector" H 10807 4826 50  0000 C CNN
-F 2 "Connector_USB:USB_A_Stewart_SS-52100-001_Horizontal" H 10900 4400 50  0001 C CNN
-F 3 "https://www.mouser.dk/datasheet/2/643/ds-stw-usb-2.0-and-3.0-connectors-1660615.pdf" H 10900 4400 50  0001 C CNN
-F 4 "530-SS-52100-001" H 10750 4450 50  0001 C CNN "MouserNO"
-F 5 "0.387" H 10750 4450 50  0001 C CNN "UnitPrice"
+F 1 "USB Micro Connector" H 10807 4826 50  0000 C CNN
+F 2 "Connector_USB:USB_Micro-B_Molex-105017-0001" H 10900 4400 50  0001 C CNN
+F 3 "https://www.mouser.dk/datasheet/2/276/1/1050170001_IO_CONNECTORS-230168.pdf" H 10900 4400 50  0001 C CNN
+F 4 "538-105017-0001 " H 10750 4450 50  0001 C CNN "MouserNO"
+F 5 "0,792" H 10750 4450 50  0001 C CNN "UnitPrice"
 F 6 "USB Connection for 5V Supply and PC Communication" H 10750 4450 50  0001 C CNN "Description"
 	1    10750 4450
 	-1   0    0    -1  
 $EndComp
-$Comp
-L power:GND #PWR038
-U 1 1 5E82E57A
-P 10800 5000
-F 0 "#PWR038" H 10800 4750 50  0001 C CNN
-F 1 "GND" H 10805 4827 50  0000 C CNN
-F 2 "" H 10800 5000 50  0001 C CNN
-F 3 "" H 10800 5000 50  0001 C CNN
-	1    10800 5000
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	10800 5000 10800 4900
-Wire Wire Line
-	10800 4900 10850 4900
-Wire Wire Line
-	10850 4900 10850 4850
-Connection ~ 10800 4900
-Wire Wire Line
-	10800 4900 10750 4900
 Text GLabel 10300 4550 0    50   Input ~ 0
-USB_DM
+USB_D-
 Text GLabel 10300 4450 0    50   Input ~ 0
-USB_DP
+USB_D+
 Wire Wire Line
 	10300 4450 10450 4450
 Wire Wire Line
@@ -1388,6 +1307,9 @@ F 0 "U4" H 5000 3331 50  0000 C CNN
 F 1 "MCP2518FDT" H 5000 3240 50  0000 C CNN
 F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 5000 1650 50  0001 C CNN
 F 3 "https://ww1.microchip.com/downloads/en/DeviceDoc/20005688A.pdf" H 5000 2900 50  0001 C CNN
+F 4 "579-MCP2518FDT-H/SL " H 5000 2650 50  0001 C CNN "MouserNO"
+F 5 "1,44" H 5000 2650 50  0001 C CNN "UnitPrice"
+F 6 "The STM32 cannot handle CAN-FD, this chip is an SPI to CAN-FD Controller to migigate this issue" H 5000 2650 50  0001 C CNN "Description"
 	1    5000 2650
 	1    0    0    -1  
 $EndComp
@@ -1500,4 +1422,102 @@ Text Notes 4000 3250 0    50   ~ 0
 Would this work?
 Text Notes 7050 6900 0    50   ~ 0
 This module is capable of:\n - Reading and writing to a 5V CAN-FD (or CAN 2.0B) bus.\n - Reading and writing to an external computer via USB\n - Transmitting and receiving data wirelessly through an NRF24 up to 1000 metres away
+Wire Wire Line
+	9650 5550 9650 5500
+Wire Wire Line
+	9950 5550 9650 5550
+$Comp
+L power:VCC #PWR029
+U 1 1 5ECA4ED3
+P 9650 5500
+F 0 "#PWR029" H 9650 5350 50  0001 C CNN
+F 1 "VCC" H 9667 5673 50  0000 C CNN
+F 2 "" H 9650 5500 50  0001 C CNN
+F 3 "" H 9650 5500 50  0001 C CNN
+	1    9650 5500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9650 5850 9950 5850
+$Comp
+L power:GND #PWR030
+U 1 1 5EC183F7
+P 9650 5850
+F 0 "#PWR030" H 9650 5600 50  0001 C CNN
+F 1 "GND" H 9655 5677 50  0000 C CNN
+F 2 "" H 9650 5850 50  0001 C CNN
+F 3 "" H 9650 5850 50  0001 C CNN
+	1    9650 5850
+	-1   0    0    -1  
+$EndComp
+Text GLabel 10050 5950 0    50   Input ~ 0
+CAN-
+$Comp
+L Mechanical:MountingHole_Pad H3
+U 1 1 5EACCCEE
+P 4100 1200
+F 0 "H3" H 4200 1246 50  0000 L CNN
+F 1 "MountingHole" H 4200 1155 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.5mm_Pad_Via" H 4100 1200 50  0001 C CNN
+F 3 "~" H 4100 1200 50  0001 C CNN
+	1    4100 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR038
+U 1 1 5E82E57A
+P 10750 4900
+F 0 "#PWR038" H 10750 4650 50  0001 C CNN
+F 1 "GND" H 10755 4727 50  0000 C CNN
+F 2 "" H 10750 4900 50  0001 C CNN
+F 3 "" H 10750 4900 50  0001 C CNN
+	1    10750 4900
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0107
+U 1 1 5EC66E9E
+P 3400 1300
+F 0 "#PWR0107" H 3400 1050 50  0001 C CNN
+F 1 "GND" H 3405 1127 50  0000 C CNN
+F 2 "" H 3400 1300 50  0001 C CNN
+F 3 "" H 3400 1300 50  0001 C CNN
+	1    3400 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0108
+U 1 1 5EC6780D
+P 4100 1300
+F 0 "#PWR0108" H 4100 1050 50  0001 C CNN
+F 1 "GND" H 4105 1127 50  0000 C CNN
+F 2 "" H 4100 1300 50  0001 C CNN
+F 3 "" H 4100 1300 50  0001 C CNN
+	1    4100 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0109
+U 1 1 5EC679AE
+P 4100 800
+F 0 "#PWR0109" H 4100 550 50  0001 C CNN
+F 1 "GND" H 4105 627 50  0000 C CNN
+F 2 "" H 4100 800 50  0001 C CNN
+F 3 "" H 4100 800 50  0001 C CNN
+	1    4100 800 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0110
+U 1 1 5EC67B95
+P 3400 800
+F 0 "#PWR0110" H 3400 550 50  0001 C CNN
+F 1 "GND" H 3405 627 50  0000 C CNN
+F 2 "" H 3400 800 50  0001 C CNN
+F 3 "" H 3400 800 50  0001 C CNN
+	1    3400 800 
+	1    0    0    -1  
+$EndComp
+NoConn ~ 10850 4850
+NoConn ~ 10450 4650
 $EndSCHEMATC
