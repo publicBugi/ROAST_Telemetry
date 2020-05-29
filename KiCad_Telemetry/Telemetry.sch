@@ -1219,9 +1219,9 @@ Wire Wire Line
 	10300 4550 10450 4550
 Text Notes 9850 5200 0    50   ~ 0
 CAN Bus Connector
-Text Notes 10050 3800 0    50   ~ 0
+Text Notes 9350 3800 0    50   ~ 0
 USB Connector
-Text Notes 9750 3900 0    50   ~ 0
+Text Notes 9050 3900 0    50   ~ 0
 Pull resistors built into STM32
 Text Notes 8650 4600 0    50   ~ 0
 Debugging Headers
@@ -1235,7 +1235,7 @@ Wire Notes Line
 	11150 3650 11150 6450
 Wire Notes Line
 	11150 6450 7050 6450
-Text Notes 8750 3800 0    50   ~ 0
+Text Notes 7700 3800 0    50   ~ 0
 Connectors
 Wire Notes Line
 	3750 2900 3750 4100
@@ -1520,4 +1520,10 @@ F 3 "" H 3400 800 50  0001 C CNN
 $EndComp
 NoConn ~ 10850 4850
 NoConn ~ 10450 4650
+Text Notes 9200 4100 0    50   ~ 0
+Small differential trace
+Text Notes 8450 4000 0    50   ~ 0
+USB 2.0 Fullspeed, No impedance matching necessary
+Text Notes 7400 7500 0    50   ~ 0
+DTU ROAST Telemetry Module
 $EndSCHEMATC
