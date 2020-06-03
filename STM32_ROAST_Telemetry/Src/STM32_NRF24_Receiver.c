@@ -36,7 +36,7 @@ void setup() {
 	// Set the speed of the transmission to the quickest available
 	radio.setDataRate(RF24_2MBPS);
 
-	// Make sure this channel isnt used elsewhere.
+	// Use a channel unlikely to be used by Wifi, Microwave ovens etc 124
 	radio.setChannel(104);
 
 	radio.setRetries(255, 5);
