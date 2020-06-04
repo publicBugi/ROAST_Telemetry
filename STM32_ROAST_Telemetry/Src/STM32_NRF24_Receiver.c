@@ -1,15 +1,18 @@
-// RX RX RX RX RX RX RX RX RX RX RX RX
+
+// --------------------------------------------------------------------
+// Receiver
+// --------------------------------------------------------------------
 #include "Arduino.h"
 #include <SPI.h>
 #include <RF24-STM.h>
 
 struct data {
-	signed int temperature; // 2 bytes, -32,768 to 32,767, same as short
-	unsigned maxTemp;		// 2 bytes, 0 to 65,535
-	double humidity; 		// 4 bytes 32-bit floating point (Due=8 bytes, 64-bit)
-	float dewPoint;  		// 4 bytes 32-bit floating point, same as double
-	signed long beeCount;	// 4 bytes from -2,147,483,648 to 2,147,483,647
-	unsigned long maxBees;	// 4 bytes from to 4,294,967,295
+	signed int temperature; // 2 bytes
+	unsigned maxTemp;		// 2 bytes
+	double humidity; 		// 4 bytes
+	float dewPoint;  		// 4 bytes
+	signed long beeCount;	// 4 bytes
+	unsigned long maxBees;	// 4 bytes
 	byte ID;				// 1 byte
 	// Total 21, you can have max 32 bytes here
 };
@@ -22,8 +25,9 @@ RF24 radio(PB0, PA4); // CE, CSN
 // -----------------------------------------------------------------------------
 // SETUP   SETUP   SETUP   SETUP   SETUP   SETUP   SETUP   SETUP   SETUP
 // -----------------------------------------------------------------------------
+
 void setup() {
-	// RX RX RX RX RX RX RX RX RX RX RX RX
+	// Receiver // Receiver // Receiver
 	Serial.begin(115200);
 	Serial.println("THIS IS THE RECEIVER CODE");
 
@@ -34,16 +38,17 @@ void setup() {
 	radio.setPALevel(RF24_PA_LOW);
 
 	// Set the speed of the transmission to the quickest available
+	// 2 Mega bytes per second
 	radio.setDataRate(RF24_2MBPS);
 
-	// Use a channel unlikely to be used by Wifi, Microwave ovens etc 124
+	// Use a channel unlikely to already be in use (Such as wifi)
 	radio.setChannel(104);
 
 	radio.setRetries(255, 5);
 
 	// Open a writing and reading pipe on each radio, with opposite addresses
-	radio.openReadingPipe(1, 0xB3B4B5B602);
-	radio.openWritingPipe(0xB3B4B5B601);
+	radio.openReadingPipe(1, 0xB3B4B5B602); // Reading is 02 for Receiver (Opposite of the Transmitter)
+	radio.openWritingPipe(0xB3B4B5B601);    // Writing is 01 for Receiver
 
 	// Start the radio listening for data
 	radio.startListening();
@@ -58,13 +63,13 @@ void setup() {
 // -----------------------------------------------------------------------------
 // We are LISTENING on this device only (although we do transmit a response)
 // -----------------------------------------------------------------------------
+
 void loop() {
-	// RX RX RX RX RX RX RX RX RX RX RX RX
+	// Receiver // Receiver // Receiver
 
 	// Is there any data for us to get?
 	if (radio.available()) {
 		// Go and read the data and put it into that variable
-		//while (radio.available()) {
 		radio.read(&myDataRx, sizeof(data));
 
 		delay(100);
@@ -94,7 +99,7 @@ void loop() {
 		myDataRx.maxBees++;
 		myDataRx.humidity += 0.1;
 
-		// Tell the user what we sent back (the random numer + 1)
+		// Tell the user what we sent back (the random number + 1)
 		Serial.println("RX: Replied");
 
 		if (!radio.write(&myDataRx, sizeof(data))) {
