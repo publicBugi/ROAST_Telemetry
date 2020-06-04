@@ -14,47 +14,14 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L RF:NRF24L01_Breakout U1
-U 1 1 5E7BD1AA
-P 1700 1750
-F 0 "U1" H 2079 1796 50  0000 L CNN
-F 1 "NRF24L01_Breakout" H 2079 1705 50  0000 L CNN
-F 2 "mysensors_radios:NRF24L01PALNA_THT" H 1850 2350 50  0001 L CIN
-F 3 "http://www.nordicsemi.com/eng/content/download/2730/34105/file/nRF24L01_Product_Specification_v2_0.pdf" H 1700 1650 50  0001 C CNN
-F 4 "NRF24 Breakout board connection: Board purchased seperately ~70 kr" H 1700 1750 50  0001 C CNN "Description"
-F 5 "70 kr" H 1700 1750 50  0001 C CNN "UnitPrice"
-F 6 "None" H 1700 1750 50  0001 C CNN "MouserNO"
-	1    1700 1750
-	-1   0    0    -1  
-$EndComp
 Text GLabel 2400 1750 2    50   Input ~ 0
 SPI1_NSS
 Text GLabel 2400 1450 2    50   Input ~ 0
 SPI1_MOSI
-Wire Wire Line
-	2400 1750 2200 1750
-Wire Wire Line
-	2400 1450 2200 1450
-Wire Wire Line
-	2400 1550 2200 1550
 Text GLabel 2400 1550 2    50   Input ~ 0
 SPI1_MISO
-Wire Wire Line
-	2400 1650 2200 1650
 Text GLabel 2400 1650 2    50   Input ~ 0
 SPI1_SCK
-$Comp
-L power:GND #PWR05
-U 1 1 5E8B3CE5
-P 1700 2350
-F 0 "#PWR05" H 1700 2100 50  0001 C CNN
-F 1 "GND" H 1705 2177 50  0000 C CNN
-F 2 "" H 1700 2350 50  0001 C CNN
-F 3 "" H 1700 2350 50  0001 C CNN
-	1    1700 2350
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:GND #PWR06
 U 1 1 5EAC57E7
@@ -73,17 +40,15 @@ Wire Wire Line
 	2050 3450 2350 3450
 Text GLabel 2400 1950 2    50   Input ~ 0
 CE_Signal
-Wire Wire Line
-	2400 1950 2200 1950
 $Comp
 L power:+3.3V #PWR04
 U 1 1 5EB8FBFB
-P 1700 1100
-F 0 "#PWR04" H 1700 950 50  0001 C CNN
-F 1 "+3.3V" H 1715 1273 50  0000 C CNN
-F 2 "" H 1700 1100 50  0001 C CNN
-F 3 "" H 1700 1100 50  0001 C CNN
-	1    1700 1100
+P 1700 900
+F 0 "#PWR04" H 1700 750 50  0001 C CNN
+F 1 "+3.3V" H 1715 1073 50  0000 C CNN
+F 2 "" H 1700 900 50  0001 C CNN
+F 3 "" H 1700 900 50  0001 C CNN
+	1    1700 900 
 	1    0    0    -1  
 $EndComp
 Text Notes 2150 3100 2    50   ~ 0
@@ -137,7 +102,6 @@ Wire Wire Line
 	5450 7250 5450 7300
 Connection ~ 5450 7250
 Connection ~ 5250 6750
-NoConn ~ 2200 2050
 Text Notes 3400 7250 1    50   ~ 0
 Programmable LED
 $Comp
@@ -313,7 +277,7 @@ $EndComp
 Wire Wire Line
 	1850 3450 2050 3450
 Wire Wire Line
-	1700 1100 1700 1150
+	1700 900  1700 950 
 Text GLabel 10050 6050 0    50   Input ~ 0
 CAN+
 Wire Wire Line
@@ -1242,16 +1206,16 @@ Wire Notes Line
 Wire Notes Line
 	500  2900 3750 2900
 Wire Wire Line
-	6650 3100 6200 3100
+	7100 3100 6700 3100
 $Comp
 L power:GND #PWR011
 U 1 1 5E9499EC
-P 6200 3100
-F 0 "#PWR011" H 6200 2850 50  0001 C CNN
-F 1 "GND" H 6205 2927 50  0000 C CNN
-F 2 "" H 6200 3100 50  0001 C CNN
-F 3 "" H 6200 3100 50  0001 C CNN
-	1    6200 3100
+P 6700 3250
+F 0 "#PWR011" H 6700 3000 50  0001 C CNN
+F 1 "GND" H 6705 3077 50  0000 C CNN
+F 2 "" H 6700 3250 50  0001 C CNN
+F 3 "" H 6700 3250 50  0001 C CNN
+	1    6700 3250
 	-1   0    0    -1  
 $EndComp
 $Comp
@@ -1267,8 +1231,6 @@ F 3 "" H 4100 2950 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4100 2950 4100 2850
-Wire Wire Line
-	4100 2850 4400 2850
 Text GLabel 4400 2950 0    50   Input ~ 0
 TIM1
 Text GLabel 4400 2650 0    50   Input ~ 0
@@ -1280,16 +1242,16 @@ SPI2_MOSI
 Text GLabel 4400 2550 0    50   Input ~ 0
 SPI2_NSS
 Wire Wire Line
-	6650 3000 6200 3000
+	7100 3000 6700 3000
 $Comp
 L power:+5V #PWR010
 U 1 1 5EFCC140
-P 6200 3000
-F 0 "#PWR010" H 6200 2850 50  0001 C CNN
-F 1 "+5V" H 6215 3173 50  0000 C CNN
-F 2 "" H 6200 3000 50  0001 C CNN
-F 3 "" H 6200 3000 50  0001 C CNN
-	1    6200 3000
+P 6700 2850
+F 0 "#PWR010" H 6700 2700 50  0001 C CNN
+F 1 "+5V" H 6715 3023 50  0000 C CNN
+F 2 "" H 6700 2850 50  0001 C CNN
+F 3 "" H 6700 2850 50  0001 C CNN
+	1    6700 2850
 	1    0    0    -1  
 $EndComp
 Text GLabel 5600 2750 2    50   Input ~ 0
@@ -1299,33 +1261,6 @@ INT2
 Text GLabel 5600 2950 2    50   Input ~ 0
 INT3
 NoConn ~ 5600 2550
-$Comp
-L Interface_CAN_LIN:MCP2517FD-xSL U4
-U 1 1 5EB8B053
-P 5000 2650
-F 0 "U4" H 5000 3331 50  0000 C CNN
-F 1 "MCP2518FDT" H 5000 3240 50  0000 C CNN
-F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 5000 1650 50  0001 C CNN
-F 3 "https://ww1.microchip.com/downloads/en/DeviceDoc/20005688A.pdf" H 5000 2900 50  0001 C CNN
-F 4 "579-MCP2518FDT-H/SL " H 5000 2650 50  0001 C CNN "MouserNO"
-F 5 "1,44" H 5000 2650 50  0001 C CNN "UnitPrice"
-F 6 "The STM32 cannot handle CAN-FD, this chip is an SPI to CAN-FD Controller to migigate this issue" H 5000 2650 50  0001 C CNN "Description"
-	1    5000 2650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5000 1950 5000 2150
-$Comp
-L power:+3.3V #PWR0105
-U 1 1 5EC58C1B
-P 5000 1950
-F 0 "#PWR0105" H 5000 1800 50  0001 C CNN
-F 1 "+3.3V" H 5015 2123 50  0000 C CNN
-F 2 "" H 5000 1950 50  0001 C CNN
-F 3 "" H 5000 1950 50  0001 C CNN
-	1    5000 1950
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:GND #PWR0104
 U 1 1 5EC4EFB5
@@ -1342,51 +1277,51 @@ CAN_RX
 Text GLabel 5600 2450 2    50   Input ~ 0
 CAN_TX
 Wire Wire Line
-	7850 2900 7950 2900
+	8300 2900 8400 2900
 $Comp
 L power:+3.3V #PWR0106
 U 1 1 5EF086EC
-P 7950 2900
-F 0 "#PWR0106" H 7950 2750 50  0001 C CNN
-F 1 "+3.3V" H 7965 3073 50  0000 C CNN
-F 2 "" H 7950 2900 50  0001 C CNN
-F 3 "" H 7950 2900 50  0001 C CNN
-	1    7950 2900
+P 8400 2700
+F 0 "#PWR0106" H 8400 2550 50  0001 C CNN
+F 1 "+3.3V" H 8415 2873 50  0000 C CNN
+F 2 "" H 8400 2700 50  0001 C CNN
+F 3 "" H 8400 2700 50  0001 C CNN
+	1    8400 2700
 	1    0    0    -1  
 $EndComp
 $Comp
 L TCAN1044VDRQ1:TCAN1044VDRQ1 IC1
 U 1 1 5EE98A3E
-P 6650 3200
-F 0 "IC1" H 7250 2635 50  0000 C CNN
-F 1 "TCAN1044VDRQ1" H 7250 2726 50  0000 C CNN
-F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 7700 3300 50  0001 L CNN
-F 3 "https://www.ti.com/lit/gpn/TCAN1044V-Q1" H 7700 3200 50  0001 L CNN
-F 4 " 595-TCAN1044VDRQ1" H 7700 2700 50  0001 L CNN "MouserNO"
-F 5 "1,13" H 6650 3200 50  0001 C CNN "UnitPrice"
-F 6 "CAN Interface IC Automotive high speed CAN transceiver 8-SOIC -40 to 125" H 7700 3100 50  0001 L CNN "Description"
-	1    6650 3200
+P 7100 3200
+F 0 "IC1" H 7700 2635 50  0000 C CNN
+F 1 "TCAN1044VDRQ1" H 7700 2726 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 8150 3300 50  0001 L CNN
+F 3 "https://www.ti.com/lit/gpn/TCAN1044V-Q1" H 8150 3200 50  0001 L CNN
+F 4 " 595-TCAN1044VDRQ1" H 8150 2700 50  0001 L CNN "MouserNO"
+F 5 "1,13" H 7100 3200 50  0001 C CNN "UnitPrice"
+F 6 "CAN Interface IC Automotive high speed CAN transceiver 8-SOIC -40 to 125" H 8150 3100 50  0001 L CNN "Description"
+	1    7100 3200
 	1    0    0    1   
 $EndComp
-Text GLabel 6650 3200 0    50   Input ~ 0
+Text GLabel 7100 3200 0    50   Input ~ 0
 CAN_TX
-Text GLabel 6650 2900 0    50   Input ~ 0
+Text GLabel 7100 2900 0    50   Input ~ 0
 CAN_RX
-Text GLabel 7950 3200 2    50   Input ~ 0
+Text GLabel 8400 3200 2    50   Input ~ 0
 CAN_STB
 Wire Wire Line
-	7950 3200 7850 3200
-Text GLabel 7950 3000 2    50   Input ~ 0
+	8400 3200 8300 3200
+Text GLabel 8400 3000 2    50   Input ~ 0
 CAN-
-Text GLabel 7950 3100 2    50   Input ~ 0
+Text GLabel 8400 3100 2    50   Input ~ 0
 CAN+
 Wire Wire Line
-	7950 3000 7850 3000
+	8400 3000 8300 3000
 Wire Wire Line
-	7850 3100 7950 3100
-Text Notes 4700 1750 0    50   ~ 0
+	8300 3100 8400 3100
+Text Notes 4000 2150 0    50   ~ 0
 CAN Controller IC
-Text Notes 6950 2500 0    50   ~ 0
+Text Notes 7400 2500 0    50   ~ 0
 CAN Transceiver
 Text Notes 9850 1050 0    50   ~ 0
 Polarity and Current protection
@@ -1405,17 +1340,17 @@ POWER
 Text Notes 9950 1500 0    50   ~ 0
 Power supplied by:\n- CAN Cable (5V)\n- USB Cable (5V)\n- Debugging header (5V!)
 Wire Notes Line
-	8350 3500 3900 3500
+	9850 3500 3900 3500
 Wire Notes Line
 	3900 3500 3900 1550
 Wire Notes Line
-	3900 1550 6200 1550
+	3900 1550 6300 1550
 Wire Notes Line
-	6200 1550 6200 2300
+	6300 1550 6300 2300
 Wire Notes Line
-	6200 2300 8350 2300
+	6300 2300 9850 2300
 Wire Notes Line
-	8350 2300 8350 3500
+	9850 2300 9850 3500
 Text Notes 3950 3500 0    50   ~ 0
 40 MHz Clock signal: See MCP2526  Fig 8.2 for External clock input
 Text Notes 4000 3250 0    50   ~ 0
@@ -1526,4 +1461,223 @@ Text Notes 8450 4000 0    50   ~ 0
 USB 2.0 Fullspeed, No impedance matching necessary
 Text Notes 7400 7500 0    50   ~ 0
 DTU ROAST Telemetry Module
+Wire Wire Line
+	4100 2850 4400 2850
+$Comp
+L Interface_CAN_LIN:MCP2517FD-xSL U4
+U 1 1 5EB8B053
+P 5000 2650
+F 0 "U4" H 4300 3400 50  0000 C CNN
+F 1 "MCP2518FDT" H 4300 3300 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 5000 1650 50  0001 C CNN
+F 3 "https://ww1.microchip.com/downloads/en/DeviceDoc/20005688A.pdf" H 5000 2900 50  0001 C CNN
+F 4 "579-MCP2518FDT-H/SL " H 5000 2650 50  0001 C CNN "MouserNO"
+F 5 "1,44" H 5000 2650 50  0001 C CNN "UnitPrice"
+F 6 "The STM32 cannot handle CAN-FD, this chip is an SPI to CAN-FD Controller to migigate this issue" H 5000 2650 50  0001 C CNN "Description"
+	1    5000 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 1850 5000 2150
+$Comp
+L power:+3.3V #PWR0105
+U 1 1 5EC58C1B
+P 5000 1850
+F 0 "#PWR0105" H 5000 1700 50  0001 C CNN
+F 1 "+3.3V" H 5015 2023 50  0000 C CNN
+F 2 "" H 5000 1850 50  0001 C CNN
+F 3 "" H 5000 1850 50  0001 C CNN
+	1    5000 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6700 3100 6700 3150
+Wire Wire Line
+	6700 2950 6700 3000
+Wire Wire Line
+	6700 3250 6700 3150
+Connection ~ 6700 3150
+Wire Wire Line
+	6700 2850 6700 2950
+Connection ~ 6700 2950
+Wire Wire Line
+	1450 950  1700 950 
+Connection ~ 1450 950 
+Wire Wire Line
+	1200 950  1450 950 
+Wire Wire Line
+	1450 1150 1200 1150
+$Comp
+L Device:C_Small C14
+U 1 1 5EEE441E
+P 1450 1050
+F 0 "C14" H 1450 750 50  0000 C CNN
+F 1 "100 nF" H 1450 850 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 1450 1050 50  0001 C CNN
+F 3 "https://www.mouser.dk/datasheet/2/281/murata_03052018_GRM_Series_1-1310166.pdf" H 1450 1050 50  0001 C CNN
+F 4 "81-GRM155C71H104JE9D" V 1450 1050 50  0001 C CNN "MouserNO"
+F 5 "0,09" V 1450 1050 50  0001 C CNN "UnitPrice"
+F 6 "Supply cap for STM32" V 1450 1050 50  0001 C CNN "Description"
+	1    1450 1050
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:C_Small C13
+U 1 1 5EEE4415
+P 1200 1050
+F 0 "C13" H 1200 750 50  0000 C CNN
+F 1 "4.7uF" H 1200 850 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 1200 1050 50  0001 C CNN
+F 3 "https://www.mouser.dk/datasheet/2/447/UPY-GPHC_X5R_4V-to-50V_25-1131599.pdf" H 1200 1050 50  0001 C CNN
+F 4 " 603-CC0402KR5R6BB475 " V 1200 1050 50  0001 C CNN "MouserNO"
+F 5 "0,126" V 1200 1050 50  0001 C CNN "UnitPrice"
+F 6 "Supply caps for STM32" V 1200 1050 50  0001 C CNN "Description"
+	1    1200 1050
+	-1   0    0    1   
+$EndComp
+Connection ~ 1700 950 
+NoConn ~ 2200 2050
+Wire Wire Line
+	2400 1550 2200 1550
+Wire Wire Line
+	2400 1450 2200 1450
+Wire Wire Line
+	2400 1650 2200 1650
+Wire Wire Line
+	2400 1750 2200 1750
+Wire Wire Line
+	2400 1950 2200 1950
+Wire Wire Line
+	1700 950  1700 1150
+$Comp
+L power:GND #PWR05
+U 1 1 5E8B3CE5
+P 1700 2350
+F 0 "#PWR05" H 1700 2100 50  0001 C CNN
+F 1 "GND" H 1705 2177 50  0000 C CNN
+F 2 "" H 1700 2350 50  0001 C CNN
+F 3 "" H 1700 2350 50  0001 C CNN
+	1    1700 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L RF:NRF24L01_Breakout U1
+U 1 1 5E7BD1AA
+P 1700 1750
+F 0 "U1" H 2079 1796 50  0000 L CNN
+F 1 "NRF24L01_Breakout" H 2079 1705 50  0000 L CNN
+F 2 "mysensors_radios:NRF24L01PALNA_THT" H 1850 2350 50  0001 L CIN
+F 3 "http://www.nordicsemi.com/eng/content/download/2730/34105/file/nRF24L01_Product_Specification_v2_0.pdf" H 1700 1650 50  0001 C CNN
+F 4 "NRF24 Breakout board connection: Board purchased seperately ~70 kr" H 1700 1750 50  0001 C CNN "Description"
+F 5 "70 kr" H 1700 1750 50  0001 C CNN "UnitPrice"
+F 6 "None" H 1700 1750 50  0001 C CNN "MouserNO"
+	1    1700 1750
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0111
+U 1 1 5EF60E41
+P 1100 1150
+F 0 "#PWR0111" H 1100 900 50  0001 C CNN
+F 1 "GND" H 1105 977 50  0000 C CNN
+F 2 "" H 1100 1150 50  0001 C CNN
+F 3 "" H 1100 1150 50  0001 C CNN
+	1    1100 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1200 1150 1100 1150
+Connection ~ 1200 1150
+Text Notes 5050 1950 0    50   ~ 0
+Decoupling is used from STM32
+Wire Wire Line
+	6450 3150 6700 3150
+Connection ~ 6450 3150
+Wire Wire Line
+	6450 2950 6700 2950
+Connection ~ 6450 2950
+Wire Wire Line
+	6200 2950 6450 2950
+Wire Wire Line
+	6200 3150 6450 3150
+$Comp
+L Device:C_Small C15
+U 1 1 5EDA60AE
+P 6200 3050
+F 0 "C15" H 6200 2750 50  0000 C CNN
+F 1 "4.7uF" H 6200 2850 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 6200 3050 50  0001 C CNN
+F 3 "https://www.mouser.dk/datasheet/2/447/UPY-GPHC_X5R_4V-to-50V_25-1131599.pdf" H 6200 3050 50  0001 C CNN
+F 4 " 603-CC0402KR5R6BB475 " V 6200 3050 50  0001 C CNN "MouserNO"
+F 5 "0,126" V 6200 3050 50  0001 C CNN "UnitPrice"
+F 6 "Supply caps for STM32" V 6200 3050 50  0001 C CNN "Description"
+	1    6200 3050
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C_Small C16
+U 1 1 5EDEB8B3
+P 6450 3050
+F 0 "C16" H 6450 2750 50  0000 C CNN
+F 1 "100 nF" H 6450 2850 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 6450 3050 50  0001 C CNN
+F 3 "https://www.mouser.dk/datasheet/2/281/murata_03052018_GRM_Series_1-1310166.pdf" H 6450 3050 50  0001 C CNN
+F 4 "81-GRM155C71H104JE9D" V 6450 3050 50  0001 C CNN "MouserNO"
+F 5 "0,09" V 6450 3050 50  0001 C CNN "UnitPrice"
+F 6 "Supply cap for STM32" V 6450 3050 50  0001 C CNN "Description"
+	1    6450 3050
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	8650 2700 8400 2700
+Connection ~ 8650 2700
+Wire Wire Line
+	8900 2700 8650 2700
+Wire Wire Line
+	8900 2900 8650 2900
+$Comp
+L Device:C_Small C18
+U 1 1 5EFD57D2
+P 8900 2800
+F 0 "C18" H 8900 2500 50  0000 C CNN
+F 1 "4.7uF" H 8900 2600 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 8900 2800 50  0001 C CNN
+F 3 "https://www.mouser.dk/datasheet/2/447/UPY-GPHC_X5R_4V-to-50V_25-1131599.pdf" H 8900 2800 50  0001 C CNN
+F 4 " 603-CC0402KR5R6BB475 " V 8900 2800 50  0001 C CNN "MouserNO"
+F 5 "0,126" V 8900 2800 50  0001 C CNN "UnitPrice"
+F 6 "Supply caps for STM32" V 8900 2800 50  0001 C CNN "Description"
+	1    8900 2800
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:C_Small C17
+U 1 1 5EFD57DF
+P 8650 2800
+F 0 "C17" H 8650 2500 50  0000 C CNN
+F 1 "100 nF" H 8650 2600 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 8650 2800 50  0001 C CNN
+F 3 "https://www.mouser.dk/datasheet/2/281/murata_03052018_GRM_Series_1-1310166.pdf" H 8650 2800 50  0001 C CNN
+F 4 "81-GRM155C71H104JE9D" V 8650 2800 50  0001 C CNN "MouserNO"
+F 5 "0,09" V 8650 2800 50  0001 C CNN "UnitPrice"
+F 6 "Supply cap for STM32" V 8650 2800 50  0001 C CNN "Description"
+	1    8650 2800
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8400 2900 8400 2700
+Connection ~ 8400 2700
+$Comp
+L power:GND #PWR01
+U 1 1 5F02A576
+P 9050 2900
+F 0 "#PWR01" H 9050 2650 50  0001 C CNN
+F 1 "GND" H 9055 2727 50  0000 C CNN
+F 2 "" H 9050 2900 50  0001 C CNN
+F 3 "" H 9050 2900 50  0001 C CNN
+	1    9050 2900
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	8900 2900 9050 2900
+Connection ~ 8900 2900
 $EndSCHEMATC
