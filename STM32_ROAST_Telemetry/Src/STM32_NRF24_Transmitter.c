@@ -9,12 +9,12 @@
 RF24 radio(PB0, PA4);
 
 struct data {
-	signed int temperature; // 2 bytes, -32,768 to 32,767, same as short
-	unsigned maxTemp;		// 2 bytes, 0 to 65,535
-	double humidity; 		// 4 bytes 32-bit floating point (Due=8 bytes, 64-bit)
-	float dewPoint;  		// 4 bytes 32-bit floating point, same as double
-	signed long beeCount;	// 4 bytes from -2,147,483,648 to 2,147,483,647
-	unsigned long maxBees;	// 4 bytes from to 4,294,967,295
+	signed int temperature; // 2 bytes
+	unsigned maxTemp;		// 2 bytes
+	double humidity; 		// 4 bytes
+	float dewPoint;  		// 4 bytes
+	signed long beeCount;	// 4 bytes
+	unsigned long maxBees;	// 4 bytes
 	byte ID;				// 1 byte
 	// Total 21, you can have max 32 bytes here
 };
@@ -25,11 +25,12 @@ data myData;
 // -----------------------------------------------------------------------------
 // SETUP   SETUP   SETUP   SETUP   SETUP   SETUP   SETUP   SETUP   SETUP
 // -----------------------------------------------------------------------------
+
 void setup() {
 	Serial.begin(115200);
-	Serial.println("TX: THIS IS THE TRANSMITTER CODE - YOU NEED THE OTHER ARDIUNO TO SEND BACK A RESPONSE");
+	Serial.println("TX: THIS IS THE TRANSMITTER CODE");
 
-	// Create enum type with some default data
+	// Creating some default data for testing
 	myData.ID = 'A';
 	myData.temperature = 72;
 	myData.maxTemp = 93;
@@ -45,17 +46,18 @@ void setup() {
 	radio.setPALevel(RF24_PA_LOW);
 
 	// Set the speed of the transmission to the quickest available
+	// 2 Mega Bytes per second
 	radio.setDataRate(RF24_2MBPS);
 
-	// Use a channel unlikely to be used
+	// Use a channel unlikely to already be in use (Such as wifi)
 	radio.setChannel(104);
 
 	// Give receiver a chance
 	radio.setRetries(200, 50);
 
 	// Open a writing and reading pipe on each radio, with opposite addresses
-	radio.openReadingPipe(1, 0xB3B4B5B601);
-	radio.openWritingPipe(0xB3B4B5B602);
+	radio.openReadingPipe(1, 0xB3B4B5B601); // Reading is 01 for Receiver
+	radio.openWritingPipe(0xB3B4B5B602);    // Writing is 02 for Receiver
 
 	// Auto ackknowledgment of a transmission
 	radio.setAutoAck(true);
@@ -64,15 +66,17 @@ void setup() {
 	radio.printDetails();
 
 	// Random number seeding (we're going to be sending a single random number)
+	// Also just for testing
 	randomSeed(analogRead(14));
 }
 
 // -----------------------------------------------------------------------------
 // LOOP     LOOP     LOOP     LOOP     LOOP     LOOP     LOOP     LOOP     LOOP
 // -----------------------------------------------------------------------------
+
 void loop() {
 
-	// Transmitter
+	// Transmitter // Transmitter // Transmitter
 
 	// Ensure we have stopped listening (even if we're not) or we won't be able to transmit
 	radio.stopListening();
@@ -88,12 +92,11 @@ void loop() {
 	// Now listen for a response
 	radio.startListening();
 
-	// But we won't listen for long
+	// Listening for a short amount of time
 	unsigned long started_waiting_at = millis();
 
 	// Loop here until we get indication that some data is ready for us to read (or we time out)
 	while (!radio.available()) {
-
 		// No response received within our timescale
 		if (millis() - started_waiting_at > 250) {
 			Serial.print("TX: Got no reply");
@@ -104,7 +107,7 @@ void loop() {
 
 	// Now read the data that is waiting for us in the nRF24
 	radio.read(&myData, sizeof(myData));
-	// Added a delay since it is to fast between transmitting, receiving and displying the data
+	// Added a delay since it is to fast between transmitting, receiving and displaying the data
 	delay(250);
 
 	// Show user what we sent and what we got back
