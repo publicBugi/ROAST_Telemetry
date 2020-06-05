@@ -3,7 +3,7 @@
 // Receiver
 // --------------------------------------------------------------------
 #include "Arduino.h"
-#include <SPI.h>
+#include <spi.h>
 #include <RF24-STM.h>
 
 struct data {

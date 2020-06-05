@@ -3,7 +3,7 @@
 // Transmitter
 // --------------------------------------------------------------------
 #include "Arduino.h"
-#include <SPI.h>
+#include <spi.h>
 #include <RF24-STM.h>
 
 RF24 radio(PB0, PA4);
