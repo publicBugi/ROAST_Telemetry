@@ -284,8 +284,6 @@ Wire Wire Line
 	10050 6050 10200 6050
 Wire Wire Line
 	10050 5950 10200 5950
-Wire Wire Line
-	10200 5550 9950 5550
 $Comp
 L B3F-4000:B3F-4000 S1
 U 1 1 5EB17941
@@ -321,195 +319,166 @@ $EndComp
 $Comp
 L power:+5V #PWR022
 U 1 1 5EE68F00
-P 9600 850
-F 0 "#PWR022" H 9600 700 50  0001 C CNN
-F 1 "+5V" H 9615 1023 50  0000 C CNN
-F 2 "" H 9600 850 50  0001 C CNN
-F 3 "" H 9600 850 50  0001 C CNN
-	1    9600 850 
+P 9050 850
+F 0 "#PWR022" H 9050 700 50  0001 C CNN
+F 1 "+5V" H 9065 1023 50  0000 C CNN
+F 2 "" H 9050 850 50  0001 C CNN
+F 3 "" H 9050 850 50  0001 C CNN
+	1    9050 850 
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:Fuse F1
 U 1 1 5EC636C8
-P 10300 850
-F 0 "F1" V 10103 850 50  0000 C CNN
-F 1 "500mA" V 10194 850 50  0000 C CNN
-F 2 "Fuse:Fuse_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 10230 850 50  0001 C CNN
-F 3 "https://www.mouser.dk/datasheet/2/40/AccuGuard2-1109284.pdf" H 10300 850 50  0001 C CNN
-F 4 "581-F0603E0R50FSTR" V 10300 850 50  0001 C CNN "MouserNO"
-F 5 "0,27" V 10300 850 50  0001 C CNN "UnitPrice"
-F 6 "Circuit Protection Fuse" V 10300 850 50  0001 C CNN "Description"
-	1    10300 850 
+P 10200 850
+F 0 "F1" V 10003 850 50  0000 C CNN
+F 1 "500mA" V 10094 850 50  0000 C CNN
+F 2 "Fuse:Fuse_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 10130 850 50  0001 C CNN
+F 3 "https://www.mouser.dk/datasheet/2/40/AccuGuard2-1109284.pdf" H 10200 850 50  0001 C CNN
+F 4 "581-F0603E0R50FSTR" V 10200 850 50  0001 C CNN "MouserNO"
+F 5 "0,27" V 10200 850 50  0001 C CNN "UnitPrice"
+F 6 "Circuit Protection Fuse" V 10200 850 50  0001 C CNN "Description"
+	1    10200 850 
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:D D2
 U 1 1 5EA3957D
-P 10700 850
-F 0 "D2" H 10700 1066 50  0000 C CNN
-F 1 "STPS2H100A" H 10700 975 50  0000 C CNN
-F 2 "Diode_SMD:D_SMA_Handsoldering" H 10700 850 50  0001 C CNN
-F 3 "https://www.mouser.dk/datasheet/2/389/cd00001548-1795718.pdf" H 10700 850 50  0001 C CNN
-F 4 "511-STPS2H100A" H 10700 850 50  0001 C CNN "MouserNO"
-F 5 "0,414" H 10700 850 50  0001 C CNN "UnitPrice"
-F 6 "Supply voltage polarity protection diode" H 10700 850 50  0001 C CNN "Description"
-	1    10700 850 
+P 10650 850
+F 0 "D2" H 10650 1066 50  0000 C CNN
+F 1 "STPS2H100A" H 10650 975 50  0000 C CNN
+F 2 "Diode_SMD:D_SMA_Handsoldering" H 10650 850 50  0001 C CNN
+F 3 "https://www.mouser.dk/datasheet/2/389/cd00001548-1795718.pdf" H 10650 850 50  0001 C CNN
+F 4 "511-STPS2H100A" H 10650 850 50  0001 C CNN "MouserNO"
+F 5 "0,414" H 10650 850 50  0001 C CNN "UnitPrice"
+F 6 "Supply voltage polarity protection diode" H 10650 850 50  0001 C CNN "Description"
+	1    10650 850 
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:VCC #PWR026
 U 1 1 5ECB28CF
-P 10900 850
-F 0 "#PWR026" H 10900 700 50  0001 C CNN
-F 1 "VCC" H 10917 1023 50  0000 C CNN
-F 2 "" H 10900 850 50  0001 C CNN
-F 3 "" H 10900 850 50  0001 C CNN
-	1    10900 850 
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR023
-U 1 1 5ECB6435
-P 9950 850
-F 0 "#PWR023" H 9950 700 50  0001 C CNN
-F 1 "+5V" H 9965 1023 50  0000 C CNN
-F 2 "" H 9950 850 50  0001 C CNN
-F 3 "" H 9950 850 50  0001 C CNN
-	1    9950 850 
+P 11000 850
+F 0 "#PWR026" H 11000 700 50  0001 C CNN
+F 1 "VCC" H 11017 1023 50  0000 C CNN
+F 2 "" H 11000 850 50  0001 C CNN
+F 3 "" H 11000 850 50  0001 C CNN
+	1    11000 850 
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10900 850  10850 850 
+	11000 850  10800 850 
 Wire Wire Line
-	10550 850  10450 850 
-Wire Wire Line
-	10150 850  9950 850 
+	10500 850  10350 850 
 $Comp
 L Device:C_Small C7
 U 1 1 5EE4A669
-P 8400 1100
-F 0 "C7" H 8492 1146 50  0000 L CNN
-F 1 "1uF" H 8492 1055 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" H 8400 1100 50  0001 C CNN
-F 3 "https://www.mouser.dk/datasheet/2/281/product-794175.pdf" H 8400 1100 50  0001 C CNN
-F 4 " 81-GRT155R61E105KE1D" H 8400 1100 50  0001 C CNN "MouserNO"
-F 5 "0,153" H 8400 1100 50  0001 C CNN "UnitPrice"
-F 6 "X5R Low ESR Cap for stable Voltage regulation" H 8400 1100 50  0001 C CNN "Description"
-	1    8400 1100
+P 7500 1100
+F 0 "C7" H 7592 1146 50  0000 L CNN
+F 1 "1uF" H 7592 1055 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 7500 1100 50  0001 C CNN
+F 3 "https://www.mouser.dk/datasheet/2/281/product-794175.pdf" H 7500 1100 50  0001 C CNN
+F 4 " 81-GRT155R61E105KE1D" H 7500 1100 50  0001 C CNN "MouserNO"
+F 5 "0,153" H 7500 1100 50  0001 C CNN "UnitPrice"
+F 6 "X5R Low ESR Cap for stable Voltage regulation" H 7500 1100 50  0001 C CNN "Description"
+	1    7500 1100
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R1
 U 1 1 5ECFB9B4
-P 7850 1100
-F 0 "R1" H 7920 1146 50  0000 L CNN
-F 1 "51.1 Ohm" H 7920 1055 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 7780 1100 50  0001 C CNN
-F 3 "https://www.mouser.dk/datasheet/2/392/susumu_RR_Data_Sheet-1206438.pdf" H 7850 1100 50  0001 C CNN
-F 4 "754-RR0816Q-51R1D69R" H 7850 1100 50  0001 C CNN "MouserNO"
-F 5 "0,09" H 7850 1100 50  0001 C CNN "UnitPrice"
-F 6 "LED Current limiting resistor" H 7850 1100 50  0001 C CNN "Description"
-	1    7850 1100
+P 6950 1100
+F 0 "R1" H 7020 1146 50  0000 L CNN
+F 1 "51.1 Ohm" H 7020 1055 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 6880 1100 50  0001 C CNN
+F 3 "https://www.mouser.dk/datasheet/2/392/susumu_RR_Data_Sheet-1206438.pdf" H 6950 1100 50  0001 C CNN
+F 4 "754-RR0816Q-51R1D69R" H 6950 1100 50  0001 C CNN "MouserNO"
+F 5 "0,09" H 6950 1100 50  0001 C CNN "UnitPrice"
+F 6 "LED Current limiting resistor" H 6950 1100 50  0001 C CNN "Description"
+	1    6950 1100
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8400 850  8550 850 
+	8700 850  8850 850 
+Connection ~ 8700 850 
 Wire Wire Line
-	9250 850  9400 850 
-Connection ~ 9250 850 
+	8700 950  8700 850 
 Wire Wire Line
-	9250 950  9250 850 
+	8600 950  8700 950 
 Wire Wire Line
-	9150 950  9250 950 
-Wire Wire Line
-	9150 850  9250 850 
-$Comp
-L Regulator_Linear:TLV70033_SOT23-5 U3
-U 1 1 5EA37823
-P 8850 950
-F 0 "U3" H 8850 1292 50  0000 C CNN
-F 1 "TLV70033_SOT23-5" H 8850 1201 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-5" H 8850 1275 50  0001 C CIN
-F 3 "http://www.ti.com/lit/ds/symlink/tlv700.pdf" H 8850 1000 50  0001 C CNN
-F 4 "595-TLV70333DBVR" H 8850 950 50  0001 C CNN "MouserNO"
-F 5 "0,315" H 8850 950 50  0001 C CNN "UnitPrice"
-F 6 "5V to 3.3V Linear regulator" H 8850 950 50  0001 C CNN "Description"
-	1    8850 950 
-	-1   0    0    -1  
-$EndComp
-Connection ~ 8400 850 
-Connection ~ 9400 850 
-Text Notes 7700 1150 3    50   ~ 0
+	8600 850  8700 850 
+Connection ~ 7500 850 
+Connection ~ 8850 850 
+Text Notes 6800 1150 3    50   ~ 0
 Power LED
 $Comp
 L power:+3.3V #PWR012
 U 1 1 5EAA6BBF
-P 7600 850
-F 0 "#PWR012" H 7600 700 50  0001 C CNN
-F 1 "+3.3V" H 7615 1023 50  0000 C CNN
-F 2 "" H 7600 850 50  0001 C CNN
-F 3 "" H 7600 850 50  0001 C CNN
-	1    7600 850 
+P 6700 850
+F 0 "#PWR012" H 6700 700 50  0001 C CNN
+F 1 "+3.3V" H 6715 1023 50  0000 C CNN
+F 2 "" H 6700 850 50  0001 C CNN
+F 3 "" H 6700 850 50  0001 C CNN
+	1    6700 850 
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8400 1000 8400 850 
+	7500 1000 7500 850 
 Wire Wire Line
-	9400 850  9600 850 
+	8850 850  9050 850 
 Wire Wire Line
-	9400 1000 9400 850 
+	8850 1000 8850 850 
 $Comp
 L power:GND #PWR021
 U 1 1 5EA8AD99
-P 9400 1200
-F 0 "#PWR021" H 9400 950 50  0001 C CNN
-F 1 "GND" H 9405 1027 50  0000 C CNN
-F 2 "" H 9400 1200 50  0001 C CNN
-F 3 "" H 9400 1200 50  0001 C CNN
-	1    9400 1200
+P 8850 1200
+F 0 "#PWR021" H 8850 950 50  0001 C CNN
+F 1 "GND" H 8855 1027 50  0000 C CNN
+F 2 "" H 8850 1200 50  0001 C CNN
+F 3 "" H 8850 1200 50  0001 C CNN
+	1    8850 1200
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR016
 U 1 1 5EA8A9CD
-P 8400 1200
-F 0 "#PWR016" H 8400 950 50  0001 C CNN
-F 1 "GND" H 8405 1027 50  0000 C CNN
-F 2 "" H 8400 1200 50  0001 C CNN
-F 3 "" H 8400 1200 50  0001 C CNN
-	1    8400 1200
+P 7500 1200
+F 0 "#PWR016" H 7500 950 50  0001 C CNN
+F 1 "GND" H 7505 1027 50  0000 C CNN
+F 2 "" H 7500 1200 50  0001 C CNN
+F 3 "" H 7500 1200 50  0001 C CNN
+	1    7500 1200
 	1    0    0    -1  
 $EndComp
-Connection ~ 7850 850 
+Connection ~ 6950 850 
 $Comp
 L power:GND #PWR017
 U 1 1 5EA46D78
-P 8850 1250
-F 0 "#PWR017" H 8850 1000 50  0001 C CNN
-F 1 "GND" H 8855 1077 50  0000 C CNN
-F 2 "" H 8850 1250 50  0001 C CNN
-F 3 "" H 8850 1250 50  0001 C CNN
-	1    8850 1250
+P 8300 1250
+F 0 "#PWR017" H 8300 1000 50  0001 C CNN
+F 1 "GND" H 8305 1077 50  0000 C CNN
+F 2 "" H 8300 1250 50  0001 C CNN
+F 3 "" H 8300 1250 50  0001 C CNN
+	1    8300 1250
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7600 850  7850 850 
+	6700 850  6950 850 
 Wire Wire Line
-	7850 1700 7850 1600
+	6950 1700 6950 1600
 Wire Wire Line
-	7850 1300 7850 1250
+	6950 1300 6950 1250
 Wire Wire Line
-	7850 950  7850 850 
+	6950 950  6950 850 
 $Comp
 L power:GND #PWR013
 U 1 1 5E813EF5
-P 7850 1700
-F 0 "#PWR013" H 7850 1450 50  0001 C CNN
-F 1 "GND" H 7855 1527 50  0000 C CNN
-F 2 "" H 7850 1700 50  0001 C CNN
-F 3 "" H 7850 1700 50  0001 C CNN
-	1    7850 1700
+P 6950 1700
+F 0 "#PWR013" H 6950 1450 50  0001 C CNN
+F 1 "GND" H 6955 1527 50  0000 C CNN
+F 2 "" H 6950 1700 50  0001 C CNN
+F 3 "" H 6950 1700 50  0001 C CNN
+	1    6950 1700
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -703,15 +672,15 @@ Connection ~ 1900 7450
 $Comp
 L Device:C_Small C10
 U 1 1 5EBE9A7C
-P 9400 1100
-F 0 "C10" H 9492 1146 50  0000 L CNN
-F 1 "1uF" H 9492 1055 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" H 9400 1100 50  0001 C CNN
-F 3 "https://www.mouser.dk/datasheet/2/281/product-794175.pdf" H 9400 1100 50  0001 C CNN
-F 4 " 81-GRT155R61E105KE1D" H 9400 1100 50  0001 C CNN "MouserNO"
-F 5 "0,153" H 9400 1100 50  0001 C CNN "UnitPrice"
-F 6 "X5R Low ESR Cap for stable Voltage regulation" H 9400 1100 50  0001 C CNN "Description"
-	1    9400 1100
+P 8850 1100
+F 0 "C10" H 8942 1146 50  0000 L CNN
+F 1 "1uF" H 8942 1055 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 8850 1100 50  0001 C CNN
+F 3 "https://www.mouser.dk/datasheet/2/281/product-794175.pdf" H 8850 1100 50  0001 C CNN
+F 4 " 81-GRT155R61E105KE1D" H 8850 1100 50  0001 C CNN "MouserNO"
+F 5 "0,153" H 8850 1100 50  0001 C CNN "UnitPrice"
+F 6 "X5R Low ESR Cap for stable Voltage regulation" H 8850 1100 50  0001 C CNN "Description"
+	1    8850 1100
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -731,15 +700,15 @@ $EndComp
 $Comp
 L Device:LED D1
 U 1 1 5EBF21D2
-P 7850 1450
-F 0 "D1" V 7889 1333 50  0000 R CNN
-F 1 "RED_LED" V 7798 1333 50  0000 R CNN
-F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7850 1450 50  0001 C CNN
-F 3 "https://dammedia.osram.info/media/resource/hires/osram-dam-5357456/KR%20DELMS1.22_EN.pdf" H 7850 1450 50  0001 C CNN
-F 4 "720-KRDELPS122A5163 " V 7850 1450 50  0001 C CNN "MouserNO"
-F 5 "0,369" V 7850 1450 50  0001 C CNN "UnitPrice"
-F 6 "RED LED to indicate power ON" V 7850 1450 50  0001 C CNN "Description"
-	1    7850 1450
+P 6950 1450
+F 0 "D1" V 6989 1333 50  0000 R CNN
+F 1 "RED_LED" V 6898 1333 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6950 1450 50  0001 C CNN
+F 3 "https://dammedia.osram.info/media/resource/hires/osram-dam-5357456/KR%20DELMS1.22_EN.pdf" H 6950 1450 50  0001 C CNN
+F 4 "720-KRDELPS122A5163 " V 6950 1450 50  0001 C CNN "MouserNO"
+F 5 "0,369" V 6950 1450 50  0001 C CNN "UnitPrice"
+F 6 "RED LED to indicate power ON" V 6950 1450 50  0001 C CNN "Description"
+	1    6950 1450
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -835,7 +804,7 @@ Wire Notes Line
 NoConn ~ 1850 3550
 NoConn ~ 1050 3550
 Wire Wire Line
-	7850 850  8400 850 
+	6950 850  7500 850 
 $Comp
 L power:GND #PWR037
 U 1 1 5EA1A6E2
@@ -872,32 +841,6 @@ F 3 "" H 8850 5700 50  0001 C CNN
 	1    8850 5700
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:PWR_FLAG #FLG0101
-U 1 1 5EED9430
-P 9950 5550
-F 0 "#FLG0101" H 9950 5625 50  0001 C CNN
-F 1 "PWR_FLAG" H 9950 5723 50  0000 C CNN
-F 2 "" H 9950 5550 50  0001 C CNN
-F 3 "~" H 9950 5550 50  0001 C CNN
-	1    9950 5550
-	1    0    0    -1  
-$EndComp
-Connection ~ 9950 5550
-$Comp
-L power:PWR_FLAG #FLG0102
-U 1 1 5EED990B
-P 9950 5850
-F 0 "#FLG0102" H 9950 5925 50  0001 C CNN
-F 1 "PWR_FLAG" H 9950 6023 50  0000 C CNN
-F 2 "" H 9950 5850 50  0001 C CNN
-F 3 "~" H 9950 5850 50  0001 C CNN
-	1    9950 5850
-	1    0    0    -1  
-$EndComp
-Connection ~ 9950 5850
-Wire Wire Line
-	9950 5850 10200 5850
 $Comp
 L Device:C_Small C8
 U 1 1 5EEEC62D
@@ -1165,7 +1108,7 @@ U 1 1 5E7F3D0D
 P 10750 4450
 F 0 "J8" H 10807 4917 50  0000 C CNN
 F 1 "USB Micro Connector" H 10807 4826 50  0000 C CNN
-F 2 "Connector_USB:USB_Micro-B_Molex-105017-0001" H 10900 4400 50  0001 C CNN
+F 2 "Connector_USB:USB_Micro-B_Molex_47346-0001" H 10900 4400 50  0001 C CNN
 F 3 "https://www.mouser.dk/datasheet/2/276/1/1050170001_IO_CONNECTORS-230168.pdf" H 10900 4400 50  0001 C CNN
 F 4 "538-105017-0001 " H 10750 4450 50  0001 C CNN "MouserNO"
 F 5 "0,792" H 10750 4450 50  0001 C CNN "UnitPrice"
@@ -1325,19 +1268,19 @@ Text Notes 7400 2500 0    50   ~ 0
 CAN Transceiver
 Text Notes 9850 1050 0    50   ~ 0
 Polarity and Current protection
-Text Notes 8300 1650 0    50   ~ 0
+Text Notes 7400 1650 0    50   ~ 0
 Linear regulator ( 5 V to 3.3 V)
 Wire Notes Line
-	7350 500  11150 500 
+	6500 500  11150 500 
 Wire Notes Line
 	11150 500  11150 2050
 Wire Notes Line
-	11150 2050 7350 2050
+	11150 2050 6500 2050
 Wire Notes Line
-	7350 2050 7350 500 
-Text Notes 9450 2000 0    50   ~ 0
+	6500 2050 6500 500 
+Text Notes 8550 2000 0    50   ~ 0
 POWER
-Text Notes 9950 1500 0    50   ~ 0
+Text Notes 9000 2000 0    50   ~ 0
 Power supplied by:\n- CAN Cable (5V)\n- USB Cable (5V)\n- Debugging header (5V!)
 Wire Notes Line
 	9850 3500 3900 3500
@@ -1359,8 +1302,6 @@ Text Notes 7050 6900 0    50   ~ 0
 This module is capable of:\n - Reading and writing to a 5V CAN-FD (or CAN 2.0B) bus.\n - Reading and writing to an external computer via USB\n - Transmitting and receiving data wirelessly through an NRF24 up to 1000 metres away
 Wire Wire Line
 	9650 5550 9650 5500
-Wire Wire Line
-	9950 5550 9650 5550
 $Comp
 L power:VCC #PWR029
 U 1 1 5ECA4ED3
@@ -1372,8 +1313,6 @@ F 3 "" H 9650 5500 50  0001 C CNN
 	1    9650 5500
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	9650 5850 9950 5850
 $Comp
 L power:GND #PWR030
 U 1 1 5EC183F7
@@ -1680,4 +1619,78 @@ $EndComp
 Wire Wire Line
 	8900 2900 9050 2900
 Connection ~ 8900 2900
+$Comp
+L Device:Ferrite_Bead FB1
+U 1 1 5EE119CC
+P 9750 850
+F 0 "FB1" V 10024 850 50  0000 C CNN
+F 1 "Ferrite_Bead" V 9933 850 50  0000 C CNN
+F 2 "Inductor_SMD:L_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 9680 850 50  0001 C CNN
+F 3 "~" H 9750 850 50  0001 C CNN
+	1    9750 850 
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	10050 850  9900 850 
+Wire Wire Line
+	9300 850  9600 850 
+$Comp
+L power:+5V #PWR023
+U 1 1 5ECB6435
+P 9300 850
+F 0 "#PWR023" H 9300 700 50  0001 C CNN
+F 1 "+5V" H 9315 1023 50  0000 C CNN
+F 2 "" H 9300 850 50  0001 C CNN
+F 3 "" H 9300 850 50  0001 C CNN
+	1    9300 850 
+	1    0    0    -1  
+$EndComp
+Text Notes 9350 1150 0    50   ~ 0
+100 ohm @ 100 MHz
+$Comp
+L Regulator_Linear:LD3985M33R_SOT23 U3
+U 1 1 5EEAC99D
+P 8300 950
+F 0 "U3" H 8300 1292 50  0000 C CNN
+F 1 "LD3985M33R_SOT23" H 8300 1201 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 8300 1275 50  0001 C CIN
+F 3 "http://www.st.com/internet/com/TECHNICAL_RESOURCES/TECHNICAL_LITERATURE/DATASHEET/CD00003395.pdf" H 8300 950 50  0001 C CNN
+	1    8300 950 
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7500 850  8000 850 
+Wire Wire Line
+	7800 950  7800 1000
+$Comp
+L power:GND #PWR07
+U 1 1 5EECF1A2
+P 7800 1200
+F 0 "#PWR07" H 7800 950 50  0001 C CNN
+F 1 "GND" H 7805 1027 50  0000 C CNN
+F 2 "" H 7800 1200 50  0001 C CNN
+F 3 "" H 7800 1200 50  0001 C CNN
+	1    7800 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C19
+U 1 1 5EED21C8
+P 7800 1100
+F 0 "C19" H 8000 1050 50  0000 C CNN
+F 1 "10nF" H 8000 1150 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 7800 1100 50  0001 C CNN
+F 3 "https://www.mouser.dk/datasheet/2/212/KEM_C1023_X7R_AUTO_SMD-1093309.pdf" H 7800 1100 50  0001 C CNN
+F 4 "80-C0402C103J3RAUTO" V 7800 1100 50  0001 C CNN "MouserNO"
+F 5 "0,099" V 7800 1100 50  0001 C CNN "UnitPrice"
+F 6 "Supply voltage cap" V 7800 1100 50  0001 C CNN "Description"
+	1    7800 1100
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	7800 950  8000 950 
+Wire Wire Line
+	9650 5550 10200 5550
+Wire Wire Line
+	9650 5850 10200 5850
 $EndSCHEMATC
