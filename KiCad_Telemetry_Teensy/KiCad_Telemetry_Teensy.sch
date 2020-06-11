@@ -1,0 +1,520 @@
+EESchema Schematic File Version 4
+LIBS:KiCad_Telemetry_Teensy-cache
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L teensy:Teensy4.0 U3
+U 1 1 5EDF59E1
+P 5250 3950
+F 0 "U3" H 5250 5565 50  0000 C CNN
+F 1 "Teensy4.0" H 5250 5474 50  0000 C CNN
+F 2 "teensy:Teensy40" H 4850 4150 50  0001 C CNN
+F 3 "" H 4850 4150 50  0001 C CNN
+	1    5250 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L RF:NRF24L01_Breakout U1
+U 1 1 5EDF7078
+P 1800 4500
+F 0 "U1" H 2180 4546 50  0000 L CNN
+F 1 "NRF24L01_Breakout" H 2180 4455 50  0000 L CNN
+F 2 "mysensors_radios:NRF24L01PALNA_THT" H 1950 5100 50  0001 L CIN
+F 3 "http://www.nordicsemi.com/eng/content/download/2730/34105/file/nRF24L01_Product_Specification_v2_0.pdf" H 1800 4400 50  0001 C CNN
+	1    1800 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR08
+U 1 1 5EDFD8B5
+P 3600 2600
+F 0 "#PWR08" H 3600 2350 50  0001 C CNN
+F 1 "GND" H 3605 2427 50  0000 C CNN
+F 2 "" H 3600 2600 50  0001 C CNN
+F 3 "" H 3600 2600 50  0001 C CNN
+	1    3600 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4150 2600 3600 2600
+$Comp
+L power:+3.3V #PWR015
+U 1 1 5EDFDCC0
+P 6850 5200
+F 0 "#PWR015" H 6850 5050 50  0001 C CNN
+F 1 "+3.3V" H 7000 5250 50  0000 C CNN
+F 2 "" H 6850 5200 50  0001 C CNN
+F 3 "" H 6850 5200 50  0001 C CNN
+	1    6850 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6750 5100 6350 5100
+$Comp
+L power:GND #PWR014
+U 1 1 5EE00D79
+P 6850 4900
+F 0 "#PWR014" H 6850 4650 50  0001 C CNN
+F 1 "GND" H 7000 4850 50  0000 C CNN
+F 2 "" H 6850 4900 50  0001 C CNN
+F 3 "" H 6850 4900 50  0001 C CNN
+	1    6850 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 5000 6750 5000
+Text GLabel 1100 4200 0    50   Input ~ 0
+MOSI
+Text GLabel 1100 4300 0    50   Input ~ 0
+MISO
+Text GLabel 1100 4400 0    50   Input ~ 0
+SCK
+Text GLabel 1100 4500 0    50   Input ~ 0
+CSN
+Text GLabel 1100 4700 0    50   Input ~ 0
+CHIP_ENABLE
+Text GLabel 1100 4800 0    50   Input ~ 0
+INTERRUPT
+$Comp
+L power:GND #PWR05
+U 1 1 5EE095D8
+P 1800 5100
+F 0 "#PWR05" H 1800 4850 50  0001 C CNN
+F 1 "GND" H 1805 4927 50  0000 C CNN
+F 2 "" H 1800 5100 50  0001 C CNN
+F 3 "" H 1800 5100 50  0001 C CNN
+	1    1800 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR04
+U 1 1 5EE09C01
+P 1800 3500
+F 0 "#PWR04" H 1800 3350 50  0001 C CNN
+F 1 "+3.3V" H 1815 3673 50  0000 C CNN
+F 2 "" H 1800 3500 50  0001 C CNN
+F 3 "" H 1800 3500 50  0001 C CNN
+	1    1800 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1100 4200 1300 4200
+Wire Wire Line
+	1300 4300 1100 4300
+Wire Wire Line
+	1100 4400 1300 4400
+Wire Wire Line
+	1300 4500 1100 4500
+Wire Wire Line
+	1100 4700 1300 4700
+Wire Wire Line
+	1300 4800 1100 4800
+Wire Wire Line
+	6750 5000 6750 4900
+Wire Wire Line
+	6750 4900 6850 4900
+Wire Wire Line
+	6750 5200 6850 5200
+Wire Wire Line
+	6750 5100 6750 5200
+$Comp
+L power:GND #PWR012
+U 1 1 5EE221A8
+P 3900 4200
+F 0 "#PWR012" H 3900 3950 50  0001 C CNN
+F 1 "GND" H 4050 4150 50  0000 C CNN
+F 2 "" H 3900 4200 50  0001 C CNN
+F 3 "" H 3900 4200 50  0001 C CNN
+	1    3900 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR011
+U 1 1 5EE2252A
+P 3900 4100
+F 0 "#PWR011" H 3900 3950 50  0001 C CNN
+F 1 "+3.3V" H 4050 4150 50  0000 C CNN
+F 2 "" H 3900 4100 50  0001 C CNN
+F 3 "" H 3900 4100 50  0001 C CNN
+	1    3900 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4150 4100 3900 4100
+Wire Wire Line
+	3900 4200 4150 4200
+Text GLabel 4150 3800 0    50   Input ~ 0
+MOSI
+Text GLabel 4150 3900 0    50   Input ~ 0
+MISO
+Text GLabel 4150 4500 0    50   Input ~ 0
+SCK
+Text GLabel 4150 3700 0    50   Input ~ 0
+CSN
+Text GLabel 4150 3600 0    50   Input ~ 0
+CHIP_ENABLE
+Text GLabel 4150 3500 0    50   Input ~ 0
+INTERRUPT
+$Comp
+L Interface_CAN_LIN:MCP2558FD-xSN U2
+U 1 1 5EE58F9C
+P 1800 6750
+F 0 "U2" H 2200 7250 50  0000 C CNN
+F 1 "MCP2558FD-xSN" H 2200 7150 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 1800 6150 50  0001 C CNN
+F 3 "https://ww1.microchip.com/downloads/en/DeviceDoc/20005533A.pdf" H 1800 6750 50  0001 C CNN
+	1    1800 6750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR07
+U 1 1 5EE5A1A5
+P 1800 7150
+F 0 "#PWR07" H 1800 6900 50  0001 C CNN
+F 1 "GND" H 1805 6977 50  0000 C CNN
+F 2 "" H 1800 7150 50  0001 C CNN
+F 3 "" H 1800 7150 50  0001 C CNN
+	1    1800 7150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR01
+U 1 1 5EE5C718
+P 750 6850
+F 0 "#PWR01" H 750 6700 50  0001 C CNN
+F 1 "+3.3V" H 765 7023 50  0000 C CNN
+F 2 "" H 750 6850 50  0001 C CNN
+F 3 "" H 750 6850 50  0001 C CNN
+	1    750  6850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1300 6850 750  6850
+Text GLabel 1300 6550 0    50   Input ~ 0
+CAN_TX
+Text GLabel 1300 6650 0    50   Input ~ 0
+CAN_RX
+Text GLabel 2300 6650 2    50   Input ~ 0
+CAN+
+Text GLabel 2300 6850 2    50   Input ~ 0
+CAN-
+Text GLabel 1300 6950 0    50   Input ~ 0
+Silent_Mode
+Text GLabel 6350 5300 2    50   Input ~ 0
+CAN_TX
+Text GLabel 6350 5200 2    50   Input ~ 0
+CAN_RX
+Text GLabel 4150 5300 0    50   Input ~ 0
+Silent_Mode
+Text Notes 950  3200 0    50   ~ 0
+Peak current consumption @ 100 mA (Transmission)
+Text Notes 700  7550 0    50   ~ 0
+Maximum current consumption @ 140 mA (Fault condition)
+Text Notes 700  7650 0    50   ~ 0
+Typical current consumption @ 55 mA
+$Comp
+L Device:C C2
+U 1 1 5EE8D46C
+P 1500 6000
+F 0 "C2" H 1385 5954 50  0000 R CNN
+F 1 "0.1uF" H 1385 6045 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 1538 5850 50  0001 C CNN
+F 3 "~" H 1500 6000 50  0001 C CNN
+	1    1500 6000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1800 5850 1500 5850
+Wire Wire Line
+	1800 5850 1800 6350
+$Comp
+L power:GND #PWR03
+U 1 1 5EE929F3
+P 1500 6150
+F 0 "#PWR03" H 1500 5900 50  0001 C CNN
+F 1 "GND" H 1505 5977 50  0000 C CNN
+F 2 "" H 1500 6150 50  0001 C CNN
+F 3 "" H 1500 6150 50  0001 C CNN
+	1    1500 6150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 5EE9EF2D
+P 1450 3650
+F 0 "C1" H 1335 3604 50  0000 R CNN
+F 1 "0.1uF" H 1335 3695 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 1488 3500 50  0001 C CNN
+F 3 "~" H 1450 3650 50  0001 C CNN
+	1    1450 3650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1450 3500 1800 3500
+$Comp
+L power:GND #PWR02
+U 1 1 5EEA1801
+P 1450 3800
+F 0 "#PWR02" H 1450 3550 50  0001 C CNN
+F 1 "GND" H 1455 3627 50  0000 C CNN
+F 2 "" H 1450 3800 50  0001 C CNN
+F 3 "" H 1450 3800 50  0001 C CNN
+	1    1450 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1800 3900 1800 3500
+Connection ~ 1800 3500
+$Comp
+L Connector_Generic:Conn_01x02 J1
+U 1 1 5EEB99FC
+P 4150 6500
+F 0 "J1" H 4230 6492 50  0000 L CNN
+F 1 "Conn_01x02" H 4230 6401 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4150 6500 50  0001 C CNN
+F 3 "~" H 4150 6500 50  0001 C CNN
+	1    4150 6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J2
+U 1 1 5EEBB148
+P 4150 6900
+F 0 "J2" H 4230 6892 50  0000 L CNN
+F 1 "Conn_01x02" H 4230 6801 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4150 6900 50  0001 C CNN
+F 3 "~" H 4150 6900 50  0001 C CNN
+	1    4150 6900
+	1    0    0    -1  
+$EndComp
+Text GLabel 3950 6900 0    50   Input ~ 0
+CAN+
+Text GLabel 3950 7000 0    50   Input ~ 0
+CAN-
+$Comp
+L power:VCC #PWR09
+U 1 1 5EED52F1
+P 3500 6500
+F 0 "#PWR09" H 3500 6350 50  0001 C CNN
+F 1 "VCC" H 3517 6673 50  0000 C CNN
+F 2 "" H 3500 6500 50  0001 C CNN
+F 3 "" H 3500 6500 50  0001 C CNN
+	1    3500 6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR010
+U 1 1 5EED5F15
+P 3500 6600
+F 0 "#PWR010" H 3500 6350 50  0001 C CNN
+F 1 "GND" H 3650 6550 50  0000 C CNN
+F 2 "" H 3500 6600 50  0001 C CNN
+F 3 "" H 3500 6600 50  0001 C CNN
+	1    3500 6600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 6600 3850 6600
+Wire Wire Line
+	3950 6500 3850 6500
+$Comp
+L power:VCC #PWR06
+U 1 1 5EED6EDE
+P 1800 5850
+F 0 "#PWR06" H 1800 5700 50  0001 C CNN
+F 1 "VCC" H 1817 6023 50  0000 C CNN
+F 2 "" H 1800 5850 50  0001 C CNN
+F 3 "" H 1800 5850 50  0001 C CNN
+	1    1800 5850
+	1    0    0    -1  
+$EndComp
+Connection ~ 1800 5850
+$Comp
+L power:VCC #PWR013
+U 1 1 5EED7362
+P 6650 4900
+F 0 "#PWR013" H 6650 4750 50  0001 C CNN
+F 1 "VCC" H 6667 5073 50  0000 C CNN
+F 2 "" H 6650 4900 50  0001 C CNN
+F 3 "" H 6650 4900 50  0001 C CNN
+	1    6650 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 4900 6650 4900
+Text Notes 3500 6050 0    50   ~ 0
+Assuming 5V supply
+Text Notes 3000 6150 0    50   ~ 0
+Add stepdown to 3.6 - 5.5 V if higher CAN supply line!
+Text Notes 4500 5500 0    50   ~ 0
+Teensy GPIO pins are NOT 5V tolerant
+Text Notes 550  7450 0    50   ~ 0
+MCP2558FD supplies 3.3 V signals; MCP2557FD supplies 5V signals.
+$Comp
+L power:PWR_FLAG #FLG01
+U 1 1 5EF374F8
+P 3850 6500
+F 0 "#FLG01" H 3850 6575 50  0001 C CNN
+F 1 "PWR_FLAG" H 3850 6673 50  0000 C CNN
+F 2 "" H 3850 6500 50  0001 C CNN
+F 3 "~" H 3850 6500 50  0001 C CNN
+	1    3850 6500
+	1    0    0    -1  
+$EndComp
+Connection ~ 3850 6500
+Wire Wire Line
+	3850 6500 3500 6500
+$Comp
+L power:PWR_FLAG #FLG02
+U 1 1 5EF37B55
+P 3850 6600
+F 0 "#FLG02" H 3850 6675 50  0001 C CNN
+F 1 "PWR_FLAG" H 3850 6773 50  0000 C CNN
+F 2 "" H 3850 6600 50  0001 C CNN
+F 3 "~" H 3850 6600 50  0001 C CNN
+	1    3850 6600
+	-1   0    0    1   
+$EndComp
+Connection ~ 3850 6600
+Wire Wire Line
+	3850 6600 3950 6600
+NoConn ~ 6350 2600
+NoConn ~ 6350 2700
+NoConn ~ 6350 2800
+NoConn ~ 6350 2900
+NoConn ~ 6350 3000
+NoConn ~ 6350 3100
+NoConn ~ 6350 3200
+NoConn ~ 6350 3400
+NoConn ~ 6350 3500
+NoConn ~ 6350 3600
+NoConn ~ 6350 3700
+NoConn ~ 6350 3800
+NoConn ~ 6350 3900
+NoConn ~ 6350 4000
+NoConn ~ 6350 4100
+NoConn ~ 6350 4200
+NoConn ~ 6350 4300
+NoConn ~ 6350 4400
+NoConn ~ 6350 4500
+NoConn ~ 6350 4800
+NoConn ~ 4150 5200
+NoConn ~ 4150 5100
+NoConn ~ 4150 5000
+NoConn ~ 4150 4900
+NoConn ~ 4150 4800
+NoConn ~ 4150 4700
+NoConn ~ 4150 4600
+NoConn ~ 4150 4400
+NoConn ~ 4150 4300
+NoConn ~ 4150 4000
+NoConn ~ 4150 3400
+NoConn ~ 4150 3300
+NoConn ~ 4150 3200
+NoConn ~ 4150 3100
+NoConn ~ 4150 3000
+NoConn ~ 4150 2900
+NoConn ~ 4150 2800
+NoConn ~ 4150 2700
+NoConn ~ 6350 3300
+$Comp
+L Mechanical:MountingHole_Pad H1
+U 1 1 5EDF7940
+P 1050 850
+F 0 "H1" H 1150 899 50  0000 L CNN
+F 1 "MountingHole_Pad" H 1150 808 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 1050 850 50  0001 C CNN
+F 3 "~" H 1050 850 50  0001 C CNN
+	1    1050 850 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H3
+U 1 1 5EDF833E
+P 2000 850
+F 0 "H3" H 2100 899 50  0000 L CNN
+F 1 "MountingHole_Pad" H 2100 808 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 2000 850 50  0001 C CNN
+F 3 "~" H 2000 850 50  0001 C CNN
+	1    2000 850 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H2
+U 1 1 5EDF8615
+P 1050 1450
+F 0 "H2" H 1150 1499 50  0000 L CNN
+F 1 "MountingHole_Pad" H 1150 1408 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 1050 1450 50  0001 C CNN
+F 3 "~" H 1050 1450 50  0001 C CNN
+	1    1050 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H4
+U 1 1 5EDF8832
+P 2000 1450
+F 0 "H4" H 2100 1499 50  0000 L CNN
+F 1 "MountingHole_Pad" H 2100 1408 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 2000 1450 50  0001 C CNN
+F 3 "~" H 2000 1450 50  0001 C CNN
+	1    2000 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 5EDF96D5
+P 2000 1550
+F 0 "#PWR0101" H 2000 1300 50  0001 C CNN
+F 1 "GND" H 2005 1377 50  0000 C CNN
+F 2 "" H 2000 1550 50  0001 C CNN
+F 3 "" H 2000 1550 50  0001 C CNN
+	1    2000 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 5EDFA217
+P 1050 1550
+F 0 "#PWR0102" H 1050 1300 50  0001 C CNN
+F 1 "GND" H 1055 1377 50  0000 C CNN
+F 2 "" H 1050 1550 50  0001 C CNN
+F 3 "" H 1050 1550 50  0001 C CNN
+	1    1050 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 5EDFAF64
+P 1050 950
+F 0 "#PWR0103" H 1050 700 50  0001 C CNN
+F 1 "GND" H 1055 777 50  0000 C CNN
+F 2 "" H 1050 950 50  0001 C CNN
+F 3 "" H 1050 950 50  0001 C CNN
+	1    1050 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0104
+U 1 1 5EDFB11C
+P 2000 950
+F 0 "#PWR0104" H 2000 700 50  0001 C CNN
+F 1 "GND" H 2005 777 50  0000 C CNN
+F 2 "" H 2000 950 50  0001 C CNN
+F 3 "" H 2000 950 50  0001 C CNN
+	1    2000 950 
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
