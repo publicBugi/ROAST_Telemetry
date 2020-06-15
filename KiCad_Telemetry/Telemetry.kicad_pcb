@@ -2229,7 +2229,7 @@
   (gr_text CAN (at 226.775 136.025 45) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )
-  (gr_text DIO (at 227.3 106.5 90) (layer F.SilkS) (tstamp 5ECC9B82)
+  (gr_text IO (at 227.3 106.5 90) (layer F.SilkS) (tstamp 5ECC9B82)
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (gr_text CLK (at 224.6 106.7 90) (layer F.SilkS) (tstamp 5ECC9B3D)
